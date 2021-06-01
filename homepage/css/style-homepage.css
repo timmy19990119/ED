@@ -614,7 +614,7 @@ a {
     background-size: 20%;
     background: #d9bcb2
 }
-#TypeBox .item{
+#TypeBox .item a{
     border-bottom: 1px solid #7e7976;
     display: flex;
     align-items: center;
@@ -626,15 +626,16 @@ a {
     padding-bottom: 20px;
     margin-top: 10px;
     justify-content: space-between;
+    text-decoration: none;
 }
-
+/*
 .item a{
     text-decoration:none;
 }
 
 .item a:hover{
     text-decoration: none;
-}
+}*/
 .icon1-img {
     width: 25px;
     display: inline-block;
