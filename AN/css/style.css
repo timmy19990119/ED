@@ -422,6 +422,7 @@ a {
 .learn_more{
     display:flex;
     justify-content: flex-end;
+    z-index: 1;
 }
 
 
