@@ -1,0 +1,275 @@
+html{
+	width: 100%;
+   /* background-color: #d9bcb2; */
+}
+
+* {
+	box-sizing: border-box;
+}
+/* navbar改顏色開始 */
+.navbar {
+    background-color: #d9bcb2;
+  }
+  .navbar .navbar-brand {
+    color: #484848;
+  }
+  .navbar .navbar-brand:hover,
+  .navbar .navbar-brand:focus {
+    color: #ecdbff;
+  }
+  .navbar .navbar-text {
+    color: #484848;
+  }
+  .navbar .navbar-text a {
+    color: #ecdbff;
+  }
+  .navbar .navbar-text a:hover,
+  .navbar .navbar-text a:focus {
+    color: #ecdbff; 
+  }
+  .navbar .navbar-nav .nav-link {
+    color: #484848;
+    border-radius: .25rem;
+    margin: 0 0.25em;
+  }
+  .navbar .navbar-nav .nav-link:not(.disabled):hover,
+  .navbar .navbar-nav .nav-link:not(.disabled):focus {
+    color: #ecdbff;
+  }
+  .navbar .navbar-nav .dropdown-menu {
+    background-color: #d9bcb2;
+    border-color: #8e6e63;
+  }
+  .navbar .navbar-nav .dropdown-menu .dropdown-item {
+    color: #484848;
+  }
+  .navbar .navbar-nav .dropdown-menu .dropdown-item:hover,
+  .navbar .navbar-nav .dropdown-menu .dropdown-item:focus,
+  .navbar .navbar-nav .dropdown-menu .dropdown-item.active {
+    color: #ecdbff;
+    background-color: #8e6e63;
+  }
+  .navbar .navbar-nav .dropdown-menu .dropdown-divider {
+    border-top-color: #8e6e63;
+  }
+  .navbar .navbar-nav .nav-item.active .nav-link,
+  .navbar .navbar-nav .nav-item.active .nav-link:hover,
+  .navbar .navbar-nav .nav-item.active .nav-link:focus,
+  .navbar .navbar-nav .nav-item.show .nav-link,
+  .navbar .navbar-nav .nav-item.show .nav-link:hover,
+  .navbar .navbar-nav .nav-item.show .nav-link:focus {
+    color: #ecdbff;
+    background-color: #8e6e63;
+  }
+  .navbar .navbar-toggler {
+    border-color: #8e6e63;
+  }
+  .navbar .navbar-toggler:hover,
+  .navbar .navbar-toggler:focus {
+    background-color: #8e6e63;
+  }
+  .navbar .navbar-toggler .navbar-toggler-icon {
+    color: #484848;
+  }
+  .navbar .navbar-collapse,
+  .navbar .navbar-form {
+    border-color: #484848;
+  }
+  .navbar .navbar-link {
+    color: #484848;
+  }
+  .navbar .navbar-link:hover {
+    color: #ecdbff;
+  }
+  
+  @media (max-width: 575px) {
+    .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item {
+      color: #484848;
+    }
+    .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+    .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+      color: #ecdbff;
+    }
+    .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item.active {
+      color: #ecdbff;
+      background-color: #8e6e63;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item {
+      color: #484848;
+    }
+    .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+    .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+      color: #ecdbff;
+    }
+    .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item.active {
+      color: #ecdbff;
+      background-color: #8e6e63;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item {
+      color: #484848;
+    }
+    .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+    .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+      color: #ecdbff;
+    }
+    .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item.active {
+      color: #ecdbff;
+      background-color: #8e6e63;
+    }
+  }
+  
+  @media (max-width: 1199px) {
+    .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item {
+      color: #484848;
+    }
+    .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+    .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+      color: #ecdbff;
+    }
+    .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item.active {
+      color: #ecdbff;
+      background-color: #8e6e63;
+    }
+  }
+  
+  .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #484848;
+  }
+  .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+  .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+    color: #ecdbff;
+  }
+  .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: #ecdbff;
+    background-color: #8e6e63;
+  }
+  /* navbar改顏色結束 */
+.container-fluid{
+    background-color: #d9bcb2;
+
+}
+.Self-Assessment{
+    margin-top: 89px;
+    background-color: #d9bcb2;
+}
+.test{
+  background-color: #d9bcb2;
+}
+
+
+
+.eating{
+    margin-top: 40px;
+}
+.middle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: "Helvetica Neue";
+    margin-top: 40px;
+}
+.member{
+    margin-top: 220px;
+    margin-left: 70px;
+    font-size: 70px;
+    font-family: 'BigCaslon Medium';
+}
+.profile{
+    margin-top: 150px;
+    /* display: flex; */
+    justify-content: space-between;
+}
+.hy{
+    margin-left: 0px;
+}
+/* .timmy{
+    margin-left:50px;
+}
+.alan{
+    margin-left:50px;
+}
+.winnie{
+    margin-left:50px;
+} */
+.contact{
+    height:1200px;
+    background-image: url(../img/contact.png);
+    background-color: #d9bcb2;
+}
+.title{
+    margin-top: 460px;
+    font-family: 'WenYue GuDianMingChaoTi';
+    font-size: 30px;
+}
+.contact .title {
+	color:#2f2f2f;
+}
+
+.contact .form {
+	max-width: 600px;
+	margin:0 auto;
+	padding: 0 30px;
+	color:#d7beb5;
+}
+
+.form input {
+	height: 40px;
+	width: 70%;
+	background-color: #d7beb5;
+	border-radius: 2px;
+	border:0px;
+	padding: 12px;
+	resize: vertical;
+	color: #000000;
+	margin:7.5px 0;
+}
+
+.form textarea {
+	height: 200px;
+	width: 100%;
+	background-color: #d7beb5;
+	border-radius: 5px;
+	border:0px;
+	padding: 12px;
+	resize: vertical;
+	color: #000000;
+	margin:7.5px 0;
+}
+
+input[type=submit] {
+  background-color: #aa8c82;
+  color: white;
+  cursor: pointer;
+  width: 150px!important;
+  height: 48px;
+  border-radius: 100px;
+  font-family: 'WenYue GuDianMingChaoTi';
+}
+
+input[type=submit]:hover {
+  background-color: #aa8c82;
+}
+
+.footer_line{
+    font-size: 10px;
+    margin:0 !important;
+    color: #a68d85;
+    background: #d9bcb2;
+}
+footer{
+    background: #ccaea3 !important;
+    font-size: 25px;
+    
+}
+
+.ED{
+    padding-top: 90px;
+    padding-left: 100px;
+}
