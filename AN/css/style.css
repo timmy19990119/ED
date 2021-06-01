@@ -365,9 +365,13 @@ a {
 
 
 
-.return{
+.return {
     max-width: 1140px;
     margin:0px auto;
+}
+
+.return a{
+    text-decoration: none;
 }
 .title{
     text-align:center

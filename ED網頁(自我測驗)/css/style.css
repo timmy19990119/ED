@@ -7,23 +7,8 @@ html{
 	box-sizing: border-box;
 }
 /* navbar改顏色開始 */
-.m-nav {
-    background-color: #d9bcb2;
-    border: 0;
-    color: #1f1f1f;
-    font-family: mingChao;
-    font-size: 18px;
-}
-.navbar-inverse .navbar-nav li a {
-    color: #1f1f1f;
-    padding: 3px 0px 3px 37px;
-    margin: 14px -27px 14px 20px;
-}
 
-.m-logo {
-    width: 30px;
-}
-/*.navbar {
+.navbar {
     background-color: #d9bcb2;
   }
   .navbar .navbar-brand {
@@ -96,7 +81,7 @@ html{
   }
   .navbar .navbar-link:hover {
     color: #ecdbff;
-  }*/
+  }
   
   @media (max-width: 575px) {
     .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item {
