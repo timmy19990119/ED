@@ -17,6 +17,36 @@ body {
     font-size: 15px;
 }
 
+.store-item{
+    border: 5px solid transparent;
+}
+.store-item:hover{
+    border: 5px solid #CFAEA2;
+    border-radius: 20px;
+    background-color: #CFAEA2;
+    box-shadow: 2px 2px 10px;
+}
+
+.corner-mark:hover{
+    cursor: pointer;
+}
+
+.corner-mark2:hover{
+    cursor: pointer;
+}
+
+.shareBtn:hover{
+    box-shadow: 0px 0px 20px #e5e5e5;
+}
+
+#btn:hover{
+    box-shadow: 2px 2px 10px;
+}
+
+.store-item a{
+    text-decoration: none;
+}
+
 @font-face {
     font-family: "fangSong";
     src: url("../fonts/fangSong.otf");

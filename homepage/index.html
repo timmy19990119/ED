@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/animate.css">
+    <!-- <link rel="stylesheet" href="./css/locomotive-scroll.css"> -->
     <link rel="stylesheet" href="./css/style-homepage.css">
     <title>Eating Disorder</title>
 </head>
 
-<body id="js-scroll">
+<body data-scroll id="js-scroll" onload="document.getElementById('mymarquee').stop();">
 
     <nav class='m-nav navbar navbar-inverse navbar-fixed-top'>
         <div class='container'>
@@ -51,17 +52,17 @@
 
         <div style="margin-top: 70px;" id="main">
             <div class="section flex-center" data-wow-delay="3s">
-                <div class="col-lg-12 col-md-12 col-ms-12 col-xs-12 no-pa-mar" id="topBannnerContain">
-                    <img src="./images/bg1.png" class="img-responsive wow slideInUp" data-wow-delay=".1s">
-                    <img src="./images/eatwell.png" class="eatwell-img wow bounceIn" data-wow-delay=".2s">
-                    <img src="./images/icon5.png" class="icon5-img wow bounceIn" data-wow-delay=".2s">
-                    <img src="./images/word.png" class="banner-tips wow bounceIn" data-wow-delay=".2s">
-                    <img src="./images/lefttop.png" class="lefttop-img wow bounceIn" data-wow-delay=".2s">
-                    <img src="./images/leftdown.png" class="leftdown-img wow bounceIn" data-wow-delay=".2s">
+                <div data-scroll-container class="col-lg-12 col-md-12 col-ms-12 col-xs-12 no-pa-mar" id="topBannnerContain">
+                    <img src="./images/bg1.png" class="img-responsive wow slideInUp data-scroll" data-wow-delay=".1s">
+                    <img src="./images/eatwell.png" class="eatwell-img wow bounceIn" data-wow-delay=".2s" data-scroll  data-scroll-speed="10">
+                    <img src="./images/icon5.png" class="icon5-img wow bounceIn" data-wow-delay=".2s" data-scroll data-scroll-direction="horizontal"  data-scroll-speed="-4">
+                    <img src="./images/word.png" class="banner-tips wow bounceIn" data-wow-delay=".2s" data-scroll  data-scroll-speed="1">
+                    <img src="./images/lefttop.png" class="lefttop-img wow bounceIn" data-wow-delay=".2s" data-scroll data-scroll-direction="horizontal"  data-scroll-speed="-2">
+                    <img src="./images/leftdown.png" class="leftdown-img wow bounceIn" data-wow-delay=".2s" data-scroll data-scroll-direction="horizontal"  data-scroll-speed="-3">
                     <img src="./images/mobile.png" class="mobile-img wow rollIn" data-wow-delay="0s">
-                    <img src="./images/righttop.png" class="righttop-img wow bounceIn" data-wow-delay=".2s">
-                    <img src="./images/rightdown.png" class="rightdown-img wow bounceIn" data-wow-delay=".2s">
-                    <img src="./images/center.png" class="center-img wow bounceIn" data-wow-delay=".2s">
+                    <img src="./images/righttop.png" class="righttop-img wow bounceIn" data-wow-delay=".2s" data-scroll data-scroll-direction="horizontal"  data-scroll-speed="4">
+                    <img src="./images/rightdown.png" class="rightdown-img wow bounceIn" data-wow-delay=".2s" data-scroll data-scroll-direction="horizontal"  data-scroll-speed="3">
+                    <img src="./images/center.png" class="center-img wow bounceIn" data-wow-delay=".2s" data-scroll  data-scroll-speed="-1">
                 </div>
             </div>
         </div>
@@ -69,9 +70,9 @@
 
         <div id="eatingBox">
             <div class="section fangSong">
-                <div class="row" id="eatingContainer">
+                <div class="row data-scroll-section" id="eatingContainer">
                     <div
-                        class="title col-lg-6 col-md-6 col-xs-6 col-ms-6 mingChao font-18 text-l no-pa-mar wow slideInUp">
+                        class="title col-lg-6 col-md-6 col-xs-6 col-ms-6 mingChao font-18 text-l no-pa-mar wow slideInUp data-scroll">
                         Eating
                         Disorders
                     </div>
@@ -185,6 +186,7 @@
 
         <div id="TypeBox">
             <div class="item wow slideInUp" id="Anorexia" data-wow-delay=".1s">
+            <!-- <marquee id="mymarquee" scrollamount="10" onMouseOver="this.stop()" onMouseOut="this.stop()"> -->
             <a href="../AN/index.html">
                 <div class="left">
                     <span class="title" style="font-size: 25px;">Type</span>
@@ -197,9 +199,10 @@
                     <img src="./images/icon1.png" class="icon1-img img-responsive">
                 </div>
             </a>
-                
+            <!-- </marquee>  -->   
             </div>
             <div class="item wow slideInUp" id="Bulimia" data-wow-delay=".2s">
+                <!-- <marquee id="mymarquee" direction="right"scrollamount="10" onMouseOver="this.stop()" onMouseOut="this.stop()"> -->
                 <a href="../BN/index.html">
                     <div class="left">
                     <span class="title" style="font-size: 25px;">Type</span>
@@ -212,10 +215,12 @@
                     <img src="./images/icon1.png" class="icon1-img img-responsive">
                 </div>
                 </a>
-                
+                <!-- </marquee> -->
             </div>
             <div class="item wow slideInUp" id="Binge" data-wow-delay=".3s">
+                <!-- <marquee id="mymarquee" scrollamount="10" onMouseOver="this.stop()" onMouseOut="this.stop()"> -->
                 <a href="../binge/index.html">
+                    
                     <div class="left">
                     <span class="title" style="font-size: 25px;">Type</span>
                     <span style="font-size: 25px;">3</span>
@@ -226,8 +231,9 @@
                     <span class="title" style="font-size: 20px;">Binge</span>
                     <img src="./images/icon1.png" class="icon1-img img-responsive">
                 </div>
+                    
                 </a>
-                
+                <!-- </marquee> -->
             </div>
             <div class="bottom-box text-r wow slideInUp" data-wow-delay=".4s">
                 <p class="fangSong" style="font-size: 15px;">除三種常見種類外.還存在較少见的ED频型。倒如清除性疾病<span class="helvetica">(Purging Disordenf.</span></p>
@@ -319,10 +325,13 @@
     </footer>
 
     <script src="./js/jquery.min.js "> </script>
-    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>    
+    <script src="./js/locomotive-scroll.min.js"></script>
     <script src="./js/wow.min.js"> </script>
 
+
     <script>
+
         $(function () {
 
             var p = 0, t = 0; //上下滚动时隐藏导航栏
@@ -382,6 +391,50 @@
                 wow.init();
             }
         })
+
+                const scroller = new LocomotiveScroll({
+    el: document.querySelector('[data-scroll-container]'),
+    smooth: true
+})
+
+gsap.registerPlugin(ScrollTrigger)
+
+
+scroller.on('scroll', ScrollTrigger.update)
+
+ScrollTrigger.scrollerProxy(
+    '.container', {
+        scrollTop(value) {
+            return arguments.length ?
+            scroller.scrollTo(value, 0, 0) :
+            scroller.scroll.instance.scroll.y
+        },
+        getBoundingClientRect() {
+            return {
+                left: 0, top: 0, 
+                width: window.innerWidth,
+                height: window.innerHeight
+            }
+        }
+    }
+)
+
+
+ScrollTrigger.create({
+    trigger: '.image-mask',
+    scroller: '.container',
+    start: 'top+=30% 50%',
+    end: 'bottom-=40% 50%',
+    animation: gsap.to('.image-mask', {backgroundSize: '120%'}),
+    scrub: 2,
+    // markers: true
+})
+
+
+ScrollTrigger.addEventListener('refresh', () => scroller.update())
+
+
+ScrollTrigger.refresh()
     </script>
 
 </body>

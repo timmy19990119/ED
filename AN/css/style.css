@@ -85,6 +85,9 @@ body {
     font-family: fangSong;
     padding-bottom: 5px;
 }
+
+
+
 .section-title {
     font-size: 22px;
 }
@@ -152,6 +155,22 @@ a {
 }
 .wen1 {
     width: 200px;
+}
+
+marquee{
+    border: 1px solid transparent;
+border-width: 2px 0 2px 0;
+border-image: linear-gradient(to right, rgba(197, 137, 114,0) 0%,rgba(176, 120, 102,1) 50%, rgba(197, 137, 114,0) 100%);
+border-image-slice: 1;
+/*box-shadow: 0px 2px 1px rgba(129, 87, 74,.5);*/
+color: #fff;
+font-family: mingChao !important;
+
+}
+
+marquee p{
+    line-height: 40px;
+    font-size: 16px;
 }
 
 .fix-btw {
@@ -297,7 +316,7 @@ a {
 }
 
 .container-fluid{
-    padding: 0;
+    padding-top: 100px;
 }
 #Topics{
     padding: 0 40px 0px;
@@ -368,6 +387,31 @@ a {
 .return {
     max-width: 1140px;
     margin:0px auto;
+
+}
+
+.return img{
+    padding-bottom: 10px;
+}
+
+.back{
+    width: 400px;
+}
+
+.back:hover{
+    animation:rotate-taichi .5s ease-in infinite alternate;
+}
+ 
+.learn_more:hover{
+    animation:bot .5s ease-in infinite alternate;
+}
+@keyframes rotate-taichi {
+  0%{transform:translateX(0%);}
+  100%{transform:translateX(5%);}
+}
+@keyframes bot {
+  0%{transform:translateX(0%);}
+  100%{transform:translateX(1%);}
 }
 
 .return a{
