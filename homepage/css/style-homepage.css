@@ -30,7 +30,6 @@ body {
     src: url("../fonts/LibreCaslonText-Regular.ttf"), url("../fonts/LibreCaslonText-Bold.ttf"),
         url("../fonts/LibreCaslonText-Italic.ttf");
 }
-
 .fangSong {
     font-family: fangSong;
 }
@@ -55,28 +54,13 @@ body {
 }
 .navbar-inverse .navbar-nav li a {
     color: #1f1f1f;
-    padding: 3px 0px 3px 37px;
-    margin: 14px -27px 14px 20px;
+    /* padding: 3px 0px 3px 37px;
+    margin: 14px -27px 14px 20px; */
 }
 
 .m-logo {
     width: 30px;
 }
-
-.m-logo: hover{
-    border: 1px solid black;
-
-}
-
-.navbar-brand: hover{
-    border: 1px solid black;
-    padding-left: 100px;
-}
-
-.bounceInDown:hover{
-    font-size: 30px;
-}
-
 
 .main-fix-text {
     font-size: 50px;
@@ -162,14 +146,10 @@ body {
     padding-bottom: 40px;
 }
 a {
-    color: #1f1f1f ;
+    color: #1f1f1f !important;
 }
 .wen1 {
     width: 200px;
-}
-
-.shareBtn:hover{
-    box-shadow: 0px 0px 10px white;
 }
 
 .fix-btw {
@@ -307,8 +287,9 @@ a {
     background-size: 100%;
     padding: 10px 15% 50px;
 }
-#Anorexia{
 
+#eatingTextContainer .item > p{
+    font-size: 15px !important;
 }
 .flex-stretch {
     display: flex;
@@ -353,7 +334,7 @@ a {
     /* padding-top: 102px; */
     /* float: right; */
     /*    margin-top: 180px;*/
-    margin-right: 40px;
+    margin-right: 55px;
     color: #2f2f2f;
 }
 .shareBtn {
@@ -366,7 +347,7 @@ a {
     border: none;
     box-shadow: none;
     margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 .store-item .img-box {
     position: relative;
@@ -426,6 +407,9 @@ a {
         border-right: 1px solid #a68d85;
         margin-bottom: 10px;
     }
+    #Contact .title .name {
+        margin-left: 20px;
+    }
 }
 /*右上角icon*/
 .header-laster {
@@ -437,14 +421,9 @@ a {
     position: absolute;
     right: 0;
     z-index: 100;
-    padding-left: -45px;
+    margin-left: -45px;
     margin-right: 40px;
 }
-
-.header-laster img:hover{
-    margin-right: 3px;
-}
-
 .dropdown {
     /*    border-bottom:1px solid #d9bcb2;*/
     margin-top: 40px;
@@ -530,14 +509,14 @@ a {
 }
 .leftdown-img {
     position: absolute;
-    z-index: 10;
+    z-index: 11;
     bottom: 4%;
     left: 17%;
     width: 14%;
 }
 .mobile-img {
     position: absolute;
-    z-index: 9;
+    z-index: 10;
     top: 17%;
     left: 27%;
     width: 35%;
@@ -561,7 +540,7 @@ a {
     top: 31%;
     left: 40.3%;
     width: 20%;
-    z-index: 10;
+    z-index: 9;
 }
 .font-18 {
     font-size: 18px;
@@ -576,8 +555,10 @@ a {
     background-image: url("../images/lineface.png");
     background-repeat: no-repeat;
     background-position: top right;
-    background-size: 25%;
+    background-size: 21%;
     padding-top: 50px;
+    margin-top: 70px;
+    opacity: 95%;
 }
 #eatingContainer .title {
     height: 100px;
@@ -592,12 +573,12 @@ a {
     background-image: url("../images/hand-earth.png");
     background-repeat: no-repeat;
     background-position: bottom right;
-    background-size: 20%;
+    background-size: 40%;
 }
 #eatingTextContainer p {
     margin: 0;
     padding: 0;
-    font-size: 14px;
+    font-size: 15px;
     font-family: fangSong;
 }
 
@@ -609,6 +590,12 @@ a {
     background-repeat: no-repeat;
     background-position: bottom left;
     background-size: 50%;
+}
+#eatingTextContainer .bg2 {
+    background-image: url(../images/ellipse2.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 40%;
 }
 .row {
     margin-left: 0;
@@ -627,7 +614,7 @@ a {
 }
 #DisorderBox .item {
     margin-bottom: 20px;
-    font-size: 14px;
+    font-size: 15px !important;
 }
 
 #TypeBox {
@@ -638,8 +625,8 @@ a {
     background-size: 20%;
     background: #d9bcb2
 }
-#TypeBox .item a{
-    /*border-bottom: 1px solid #7e7976;*/
+#TypeBox .item {
+    border-bottom: 1px solid #7e7976;
     display: flex;
     align-items: center;
     background-image: url("../images/ellpse7.png");
@@ -650,31 +637,7 @@ a {
     padding-bottom: 20px;
     margin-top: 10px;
     justify-content: space-between;
-    text-decoration: none;
 }
-/*marquee{
-    border-bottom: 1px solid #7e7976;
-}*/
-footer a:hover{
-    text-decoration: none;
-    color: #000;
-}
-
-#Anorexia a:hover{
-    color: #000;
-    cursor:url('../images/news_resize.png') ,pointer !important;
-}
-
-#Bulimia a:hover{
-    color: #000;
-    cursor:url('../images/eatmany.png') ,pointer !important;
-}
-
-#Binge a:hover{
-    color: #000;
-    cursor:url('../images/binge.png') ,pointer !important;
-}
-
 .icon1-img {
     width: 25px;
     display: inline-block;
@@ -701,8 +664,82 @@ footer a:hover{
     background-size: 40%;
 }
 
+/*文字橫向輪播*/
+.pad_right{ 
+    padding-right:2em;
+}
+#scroll_div {
+    height:26px;
+    overflow: hidden;
+    white-space: nowrap;
+    width:190px;
+    margin-left:45px;
+    margin-top: 10px;
+}
+#scroll_begin,#scroll_end {
+    display: inline;
+}
 
+.pad_right{ 
+    padding-right:2em;
+}
+#scroll_div1 {
+    height:26px;
+    overflow: hidden;
+    white-space: nowrap;    /*规定段落中的文本不进行换行：*/
+    width:190px;
+    margin-left:45px;
+    margin-top: 10px;
+}
+#scroll_begin1,#scroll_end1 {
+    display: inline;
+}
 
+.pad_right{ 
+    padding-right:2em;
+    font-size: 18px;
+}
+#scroll_div2 {
+    height:26px;
+    overflow: hidden;
+    white-space: nowrap;
+    width:190px;
+    margin-left:45px;
+    margin-top: 10px;
+}
+#scroll_begin2,#scroll_end2 {
+    display: inline;
+}
+
+/*滑鼠事件*/
+footer a:hover{
+    text-decoration: none;
+    color: #fff5eb !important;
+}
+#TypeBox a:hover{
+    text-decoration: none;
+    color: #fff5eb !important;
+}
+.shareBtn:hover{
+    box-shadow: 0px 0px 10px white;
+}
+.mouse:hover{
+    font-size: 20px;
+    color: #fff5eb !important;
+}
+
+/*鼠標經過產生圖片*/
+#Anorexia:hover{
+    cursor:url('../images/anorexia.png') !important;
+}
+
+#Bulimia:hover{
+    cursor:url('../images/bulimia.png') !important;
+}
+
+#Binge:hover{
+    cursor:url('../images/binge.png') !important;
+}
 
 /* 小屏幕（平板，大于等于 768px） */
 @media (min-width: 768px）) { 
@@ -732,5 +769,8 @@ footer a:hover{
         margin-top: 255px;
         float: right;
 
+    }
+    #eatingTextContainer .poem{
+        padding-left: 20px;
     }
  }

@@ -2,92 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/style.css">
     <!-- css連結 -->
-	<link href="css/style.css" rel="stylesheet">
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
-</head>
-<body>
-        	<!-- JS連結 -->
-	<script src="js/jQuery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.fancybox.min.js"></script>
 
-    <!-- 漢堡選單 -->
-	<nav class="navbar navbar-expand-lg navbar-default fixed-top">
-        <a class="navbar-brand" href="../homepage/index.html"><img src="img/logo.png" alt=""></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-    
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item"><a class="nav-link" href="../homepage/index.html">何為ED</a></li>
-              <li class="nav-item"><a class="nav-link" href="../ED網頁(自我測驗)/index.html">自測量表</a></li>
-              <li class="nav-item"><a class="nav-link" href="../homepage/story.html">故事驛站</a></li>
-              <li class="nav-item"><a class="nav-link" href="../話題廣場/topic.html">話題廣場</a></li>
-              <li class="nav-item"><a class="nav-link" href="../ED網頁(about-us)/index.html">關於我們</a></li>
-            </ul>
-          </div>
-    </nav>
-    <!-- About Us -->
-    <div class="aboutus">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-1"></div>
-            <div class="col-md-11 ">
-                <img class="about-us" src="img/aboutus.png" >
-                <img class="aboutus2" src="img/aboutus2.png" alt="">
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/script.js"></script>
+    <title>About-us</title>
+</head>
+<body id="js-scroll">
+    <body id="js-scroll">
+
+        <nav class='m-nav navbar navbar-inverse navbar-fixed-top'>
+            <div class='container'>
+                <div class='navbar-header' data-scroll data-scroll-direction="horizontal" data-scroll-speed="-2"
+                    data-scroll-position="top" data-scroll-target="#header">
+                    <button class='navbar-toggle' type='button' data-toggle='collapse' data-target='#collapse'>
+                        <span class='icon-bar'></span>
+                        <span class='icon-bar'></span>
+                        <span class='icon-bar'></span>
+                    </button>
+                    <a data-wow-delay=".1s" class="navbar-brand wow bounceInDown" href="#">
+                    <img class="img-responsive m-logo" src="img/top.png" onmouseover="this.src='img/top-1.png';" onmouseout="this.src='img/top.png';" style="margin-left: 3px">
+                </a>
             </div>
-            <!-- <div class=col-md-2></div>
-            <div class="col-md-4">
-                
-            </div> -->
+            <div id='collapse' class='collapse navbar-collapse' data-scroll data-scroll-speed="-8"
+                data-scroll-position="top" data-scroll-target="#header" data-scroll-repeat>
+                <ul class='nav navbar-nav navbar-right'>
+                    <li><a class="wow bounceInDown mouse" style="font-family: mingChao" href="#DisorderBox"
+                            data-wow-delay=".1s" style="">何为&thinsp;<span class="helvetica">ED</span></a></li>
+                    <li><a class="wow bounceInDown mouse" style="font-family: mingChao" href="../ED網頁(自我測驗)/index.html"
+                            data-wow-delay=".2s">自测量表</a></li>
+                    <li><a class="wow bounceInDown mouse" style="font-family: mingChao" href="./story.html"
+                            data-wow-delay=".3s">故事驛站</a></li>
+                    <li><a class="wow bounceInDown mouse" style="font-family: mingChao" href="../話題廣場/topic.html"
+                            data-wow-delay=".4s">話題廣場</a></li>
+                    <li><a class="wow bounceInDown mouse" style="font-family: mingChao" href="../ED網頁(about-us)/index.html"
+                            data-wow-delay=".5s">關於我們</a></li>
+                    <li class=""><a class="wow bounceInDown" href="#Contact" data-wow-delay=".5s">
+                            <img style="width: 25px;" src="./images/icon.png" onmouseover="this.src='img/icon-1.png';" onmouseout="this.src='img/icon.png';">
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="col-12"> 
+                <img src="img/about.png" alt="">
+            </div>
         </div>
-    </div>
-    </div>
-   <!-- banner -->
-   <div id="lunbo">
-	<div  class="container">
-		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-		  <ol class="carousel-indicators">
-		    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-		    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-		    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-		  </ol>
-		  <!-- 輪播內容 -->
-		  <div class="carousel-inner">
-		    <div class="carousel-item active">
-		      <img src="img/lunbo1.png" class="d-block w-100" alt="...">
-		    </div>
-		    <div class="carousel-item">
-		      <img src="img/lunbo2.png" class="d-block w-100" alt="...">
-		    </div>
-		    <div class="carousel-item">
-		      <img src="img/lunbo3.png" class="d-block w-100" alt="...">
-		    </div>
-		  </div>
-		  <!-- 左右箭頭 -->
-		  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-		    <span class="sr-only">Previous</span>
-		  </a>
-		  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-		    <span class="sr-only">Next</span>
-		  </a>
-		</div>  
-	</div>
-    </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-1"></div>
-            <div class="col-md-10">
-            <div class="middle">
+        
+
+
+
+  <div class="picWrapper">
+    <ul class="pics" style="list-style-type:none;">
+      <li class="pic1"><img src="img/lunbo1.png" alt=""></li>
+      <li class="pic2"><img src="img/lunbo2.png" alt=""></li>            
+      <li class="pic3"><img src="img/lunbo3.png" alt=""></li>
+
+    </ul>
+  </div>
+<ul class="sel" style="list-style-type:none;">
+    <li class="btn1 btnNow"><img src="img/lunbo1.png" alt=""></li>
+    <li class="btn2"><img src="img/lunbo2.png" alt=""></li>
+    <li class="btn3"><img src="img/lunbo3.png" alt=""></li>
+<!--     <li class="btn4"><img src="./images/fl5.png" alt=""></li>
+    <li class="btn5"><img src="./images/fl6.png" alt=""></li> -->
+  </ul>
+
+
+    <div class="words">
                 你有多久沒有好好吃飯了？<br>
 
                 進食障礙的發生離不開大眾對瘦削女性美的浪漫化想像。一如蘇珊·桑塔格在《疾病的隱喻》中探討Phthisis與Cancer的對比<br>
@@ -115,11 +102,7 @@
                 患者，都能成功與自己和解，迎來重拾好好吃飯能力的那一天。<br>
                 <br>
                 我們想對所有正在或者曾經與進食障礙掙扎著的女孩說，妳不是怪物，跟自己和解吧，希望妳再也不要因為體重而不快樂。
-                </div>
             </div>
-            <div class="col-1"></div>
-        </div>
-    </div>
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-3">
@@ -135,59 +118,132 @@
             </div>
         </div>
     </div>
-    <!-- 聯繫我們 -->
-    <div class="contact" id="section3">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div>
-                        <p class="title text-center">When it comes to ED...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;聯繫我們</p>
-                        
-                        <!-- <hr class="title_line"> -->
+
+
+        <div class="container-fluid pd-bt-40" id="Contact">
+            <div class="section">
+                <div class="title col-md-10 col-xs-12 col-ms-12 col-md-offset-1">
+                        <span class="col-md-9  col-xs-12 col-ms-12 name wow slideInUp">When it comes to ED...</span>
+                        <span class="col-md-2  col-xs-12 col-ms-12 call wow slideInUp">聯繫我們</span>
+                </div>
+                <div class="title col-md-7  col-md-offset-3">
+                    <div class="row">
+                        <div class="col-xl-6 col-md-6 col-xs-12 col-ms-12 wow slideInUp">
+                            <div class="form-group">
+                                <input name="name" id="name" type="text" class="form-control" placeholder="First Name">
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-md-6  col-xs-12 col-ms-12 wow slideInUp">
+                            <div class="form-group">
+                                <input name="text" id="text" type="text" class="form-control" placeholder="Last Name">
+                            </div>
+                        </div>
+    
+                        <div class="col-xl-12 col-md-12  col-xs-12 col-ms-12 wow slideInUp">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                            </div>
+                        </div>
+    
+                        <div class="col-xl-12 col-md-12  col-xs-12 col-ms-12 wow slideInUp">
+                            <div class="form-group">
+                                <textarea class="form-control" rows="7" style="font-family: fangSong;">
+    提到ED,你想起了什麼? 
+    一段經歷、一個亟需解决的問题
+    抑或是改善现狀的想法?
+    我們雖在這荒謬的世間行走
+    卻從未孤立無援。
+    請分享你與ED的故事，讓更多需要的人看見!
+                                </textarea>
+                            </div>
+                        </div>
+    
+    
+    
                     </div>
-                    <div class="form">
-                        <div>
-                            <input type="text" placeholder="你的名字">
+                    <div class="row">
+                        <div class="col-xl-12 col-md-12 wow slideInUp">
+                            <div> <button class="shareBtn" style="cursor: pointer;">分享我的故事</button></div>
                         </div>
-                        <div>
-                            <input type="text" placeholder="Email">
-                        </div>
-                        <div>
-                            <input type="text" placeholder="主旨">
-                        </div>
-                        <div>
-                            <textarea placeholder="
-提到ED，你想到了甚麼?
-一段經歷，一個急需解決的問題
-抑或是改善現狀的想法?
-我們雖在這荒謬的世間行走
-卻從未孤立無援。
-請分享你與ED的故事，讓更多需要的人看見! " class="text-left"></textarea>
-                        </div>
-                        <div class="text-left"><input type="submit" value="分享我的故事"></div>
-                    </div>	
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    	<!-- footer -->
-	<footer >
-        <hr class="footer_line">
-		<div class="container-fluid">
-			<div class="row">
-                <div class="col-12"><p>&nbsp</p></div>
-                <div class="col-1"> <img class="footer-logo" src="img/antied.png" height=80% alt=""></div>
-                <div class="col-1"></div>
-				<div class="col-md-3 text-left">
-					關於我們 <br>antied@gamil.com <br> 新竹市東區大學路1001號
-				</div>
-                <div class="col-1"></div>
-                <div class="col-4">美國進食障礙幫助協會 NEDA <br>進食障礙者匿名互助組織 OA</div>
-				<div class="col-md-1 text-center">
-					<a href="#"><img class="ED" src="img/© AntiED.png"></a>
-				</div>
-			</div>
-		</div>
-	</footer>
+    
+        <footer style="background-color: #d9bcb2;border-top:1px solid #a68d85; padding-top: 20px;">
+            <div class="container-fluid">
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    <img style="width: 50px;" src="./img/bottom.png" class="img-responsive wow slideInUp "
+                        data-wow-delay="0.1s" alt="">
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <p class=" wow slideInUp helvetica" data-wow-delay="0.2s">intied@gmail.com</p>
+                    <p class="f-s wow slideInUp fangSong " data-wow-delay="0.3s">新竹市東區大學路1001號</p>
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-5">
+                    <p class="f-s wow slideInUp " data-wow-delay="0.1s">
+    
+                        <a href="https://www.nationaleatingdisorders.org" class="fangSong">美國進食障礙幫助協會 NEDA</a>
+                    </p>
+                    <p class="f-s wow slideInUp " data-wow-delay="0.2s">
+                        <a href="https://oa.org/" class="fangSong">進食障礙者匿名互助組織 OA</a>
+                    </p>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1">
+                    <p style="margin-top: 62px;" class="text-c wow bounceInRight" data-wow-delay="0.1">
+                        <a
+                            href="mailto:https://www.google.com.tw/maps/place/300%E6%96%B0%E7%AB%B9%E5%B8%82%E6%9D%B1%E5%8D%80%E5%A4%A7%E5%AD%B8%E8%B7%AF1001%E8%99%9F/@24.7861802,120.9984813,16.12z/data=!4m5!3m4!1s0x34683611dcf63a29:0x7cd7b92e8a3c5019!8m2!3d24.7884305!4d120.9986143">© AntiED</a>
+                    </p>
+                </div>
+            </div>
+    
+        </footer>
+
+        <script src="./js/jquery.min.js "> </script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/wow.min.js"> </script>
+        <script src="js/jQuery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.fancybox.min.js"></script>
+    
+        <script>
+            $(function () {
+    
+                var p = 0, t = 0; //上下滚动时隐藏导航栏
+                $(window).scroll(function (e) {
+                    //下滑
+                    p = $(this).scrollTop();
+                    if (t < p && p !== 0) {
+                        $('.m-nav').slideUp('slow');
+                    } else {
+                    //上滑
+                        $('.m-nav').slideDown('slow')
+                    }
+                    t = p;//更新上一次的scroll值
+                })
+    
+                var storiesText = ''
+                var dropdownItemText = ''
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 0);
+    
+    
+    
+                if ($(".wow").length) {
+                    var wow = new WOW(
+                        {
+                            boxClass: 'wow',      // animated element css class (default is wow)
+                            offset: 20,          // distance to the element when triggering the animation (default is 0)
+                            mobile: false,       // trigger animations on mobile devices (default is true)
+                            live: true,       // act on asynchronously loaded content (default is true)
+                            scrollContainer: null,    // optional scroll container selector, otherwise use window,
+                            resetAnimation: true,     // reset animation on end (default is true)
+                        }
+                    );
+                    wow.init();
+                }
+            })
+        </script>
 </body>
 </html>

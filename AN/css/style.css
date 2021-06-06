@@ -536,3 +536,20 @@ marquee p{
     margin-right: 40px;
  }
  
+
+#TypeBox a:hover{
+    text-decoration: none;
+    color: #fff5eb !important;
+}
+.shareBtn:hover{
+    box-shadow: 0px 0px 10px white;
+}
+.mouse:hover{
+    font-size: 20px;
+    color: #fff5eb !important;
+}
+
+footer a:hover{
+    text-decoration: none;
+    color: #fff5eb !important;
+}
