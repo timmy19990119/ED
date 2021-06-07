@@ -209,6 +209,22 @@
         <script src="js/script.js"></script>
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <script>
+
+            $(function () {
+
+                blockA = $('.profile').offset().top;
+                console.log(blockA)
+  $(window).scroll(function () {
+    var scrollVal = $(this).scrollTop();
+    console.log(scrollVal)
+    if (scrollVal > blockA-700){
+        $('.profile').addClass('profile1');
+    }
+  });
+});
+
+
+
             $(function () {
     
                 var p = 0, t = 0; //上下滚动时隐藏导航栏
