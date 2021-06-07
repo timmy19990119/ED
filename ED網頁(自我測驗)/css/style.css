@@ -370,7 +370,8 @@ margin-left: 50px;
 
 
 .imgout{
-    animation:first .5s .8s forwards;
+    animation:first .5s .8s forwards,ocillate .05s 1.2s linear 5 alternate forwards;
+    /*animation: ocillate .5s 1.3s linear infinite alternate forwards;*/
 }
 
 @keyframes first{
@@ -396,7 +397,10 @@ margin-left: 50px;
   0%{transform:rotate3d(0, 1, 0, 45deg);}
   100%{transform:rotate3d(0, 1, 0, -45deg);}
 }
-
+@keyframes ocillate {
+  0%{transform:translate(5px);}
+  100%{transform:translate(-5px);}
+}
 .test{}
 
 .imghov{
