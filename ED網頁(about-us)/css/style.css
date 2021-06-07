@@ -252,6 +252,7 @@ a {
 #Contact .title .call{
     font-size: 28px;
     font-family: mingChao;
+    margin-top: 250px;
     margin-bottom: 20px;
     margin-right: 40px;
     color: #2f2f2f;
@@ -358,6 +359,22 @@ a {
     margin-right: 40px;
  }
 
+#TypeBox a:hover{
+    text-decoration: none;
+    color: #fff5eb !important;
+}
+.shareBtn:hover{
+    box-shadow: 0px 0px 10px white;
+}
+.mouse:hover{
+    font-size: 20px;
+    color: #fff5eb !important;
+}
+
+footer a:hover{
+    text-decoration: none;
+    color: #fff5eb !important;
+}
 
  .sel{
   width: 800px;
@@ -418,33 +435,4 @@ a {
 
 .pics li{
   flex-shrink: 0;
-}
-
-/*.btnNow{
-  background-color: #666;
-  color: white;
-}*/
-
-#TypeBox a:hover{
-    text-decoration: none;
-    color: #fff5eb !important;
-}
-.shareBtn:hover{
-    box-shadow: 0px 0px 10px white;
-}
-.mouse:hover{
-    font-size: 20px;
-    color: #fff5eb !important;
-}
-
-footer a:hover{
-    text-decoration: none;
-    color: #fff5eb !important;
-}
-
-
-a:visited {
-//設定已經瀏覽過的連結
-color:#ffffff;
-background-color:red;
 }

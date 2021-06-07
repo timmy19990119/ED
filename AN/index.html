@@ -40,7 +40,7 @@
                     <li><a class="wow bounceInDown mouse" style="font-family: mingChao" href="../ED網頁(about-us)/index.html"
                             data-wow-delay=".5s">關於我們</a></li>
                     <li class=""><a class="wow bounceInDown" href="#Contact" data-wow-delay=".5s">
-                            <img style="width: 25px;" src="./images/icon.png" onmouseover="this.src='img/icon-1.png';" onmouseout="this.src='img/icon.png';">
+                            <img style="width: 25px;" src="./img/icon.png" onmouseover="this.src='img/icon-1.png';" onmouseout="this.src='img/icon.png';">
                         </a></li>
                 </ul>
             </div>
@@ -170,7 +170,7 @@
         <footer style="background-color: #d9bcb2;border-top:1px solid #a68d85; padding-top: 20px;">
         <div class="container-fluid">
             <div class="col-lg-2 col-md-2 col-sm-2">
-                <img style="width: 50px; padding-bottom: 30px;" src="./images/bottom.png"
+                <img style="width: 50px; padding-bottom: 30px;" src="./img/bottom.png"
                     class="img-responsive wow slideInUp " data-wow-delay="0.1s">
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4">
@@ -200,10 +200,20 @@
     <script src="./js/jquery.min.js "> </script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/wow.min.js"> </script>
-
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script>
         $(function () {
 
+            // 點擊分享按鈕，清除文本框內容，顯示發送成功
+        $('.shareBtn').click(function () {
+             $('#inputEmail,#inputName,#inputLastName,#textareaContent').val('')
+
+             //$('#shareSuccess').show()
+
+             //alert('Successfully Sent | 已傳送，感謝分享')
+             swal("Sent", "感謝分享", "success");
+        })
+            
             var p = 0, t = 0; //上下滚动时隐藏导航栏
             $(window).scroll(function (e) {
                 //下滑
