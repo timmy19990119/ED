@@ -50,14 +50,17 @@
                 <img style="max-width:95%" src="img/ed.png" alt="">
             </div>
         </div>
-        <div class="test">
+        <div class="test1">
             <div class="container">
-               <div class="row">
+                <div class="new">
                    <div class="test">
-                       <a class="firstimg" href="https://www.healthyd.com/quiz/eating-disorder-eat26" target="_blank"><img herf="" src="img/first.png" width=25% alt=""></a>
-                       <a class="secondimg" href="https://www.healthyd.com/quiz/eating-disorder-eat40" target="_blank"><img herf="" src="img/second.png" width=25%  alt=""></a>
-                       <a class="thirdimg" href="https://drive.google.com/file/d/1VAB3rxUc6-ttrou0XcyEty6tWp1BoB4_/view?usp=sharing" target="_blank"><img herf="" src="img/third.png" width=25%  alt=""></a>
-                    </div>
+                       <a class="firstimg" href="https://www.healthyd.com/quiz/eating-disorder-eat26" target="_blank"><div><img herf="" src="img/first.png" width=25% alt=""></div></a>
+                       <a class="secondimg" href="https://www.healthyd.com/quiz/eating-disorder-eat40" target="_blank"><div><img herf="" src="img/second.png" width=25%  alt=""></div></a>
+                       <a class="thirdimg" href="https://drive.google.com/file/d/1VAB3rxUc6-ttrou0XcyEty6tWp1BoB4_/view?usp=sharing" target="_blank"><div><img herf="" src="img/third.png" width=25%  alt=""></div></a>
+                    </div> 
+                </div>
+               <div class="row">
+                   
                </div>
                <div class="row">
                    <div class="col-12"><img src="img/leaf2.png" width=95% alt=""></div>
@@ -154,6 +157,14 @@
         <script src="js/jquery.fancybox.min.js"></script>
     
         <script>
+            $(function(){
+                $('.test img').mouseover(function(){
+                    console.log('1');
+                    $(this).stop(true,false).addClass('imghov');})
+                $('.test img').mouseout(function(){
+                    $(this).stop(true,false).removeClass('imghov')})
+                }
+            )
             $(function () {
     
                 var p = 0, t = 0; //上下滚动时隐藏导航栏

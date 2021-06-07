@@ -441,3 +441,10 @@ footer a:hover{
     text-decoration: none;
     color: #fff5eb !important;
 }
+
+
+a:visited {
+//設定已經瀏覽過的連結
+color:#ffffff;
+background-color:red;
+}

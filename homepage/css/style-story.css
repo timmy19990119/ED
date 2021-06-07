@@ -491,3 +491,10 @@ footer a:hover{
 .headroom--unpinned {
   transform: translateY(-100%);
 }
+
+
+a:visited {
+//設定已經瀏覽過的連結
+color:#ffffff;
+background-color:red;
+}

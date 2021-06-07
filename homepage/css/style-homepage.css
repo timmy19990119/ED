@@ -780,3 +780,9 @@ footer a:hover{
         padding-left: 20px;
     }
  }
+
+
+a:visited{
+//設定已經瀏覽過的連結
+text-decoration: none;
+}
