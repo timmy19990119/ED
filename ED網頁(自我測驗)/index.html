@@ -55,9 +55,9 @@
             <div class="container">
                <div class="row">
                    <div class="test">
-                       <img style="opacity: 0;" herf="" src="img/first.png" width=25% alt="">
-                       <img style="opacity: 0;" herf="" src="img/second.png" width=25%  alt="">
-                       <img style="opacity: 0;" herf="" src="img/third.png" width=25%  alt="">
+                       <a href=""><img class="first"style="opacity: 0;" herf="" src="img/first.png" width=70% alt=""></a>
+                       <a href=""><img class="second"style="opacity: 0;" herf="" src="img/second.png" width=70% alt=""></a>
+                       <a href=""><img class="third"style="opacity: 0;" herf="" src="img/third.png" width=70% alt=""></a>
                     </div>
                </div>
                <div class="row">
@@ -161,25 +161,25 @@
             $(function () {
 
 
-            $('.test img:nth-child(1)').addClass('imgout');
+            $('.test a:nth-child(1)').addClass('imgout');
 
             setTimeout(function(){ 
-                $('.test img:nth-child(1)').css('opacity',1); 
+                $('.first').css('opacity',1); 
             }, 1000); 
 
             setTimeout(function(){ 
-                $('.test img:nth-child(2)').addClass('imgout'); 
+                $('.test a:nth-child(2)').addClass('imgout'); 
             }, 1000); 
 
             setTimeout(function(){ 
-                $('.test img:nth-child(2)').css('opacity',1); 
+                $('.second').css('opacity',1); 
             }, 2000); 
             setTimeout(function(){ 
-                $('.test img:nth-child(3)').addClass('imgout');
+                $('.test a:nth-child(3)').addClass('imgout');
             }, 2000); 
 
             setTimeout(function(){ 
-                $('.test img:nth-child(3)').css('opacity',1); 
+                $('.third').css('opacity',1); 
             }, 3000); 
 
             $('.test img').stop(false,true).mouseover(function(){

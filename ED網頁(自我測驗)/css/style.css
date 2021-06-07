@@ -368,7 +368,10 @@ margin-left: 50px;
 /*animation:first 1s .8s forwards;*/
 }
 
-
+.test a{
+    perspective: 1000px;
+    transform-style:preserve-3d;
+}
 .imgout{
     animation:first .5s .8s forwards,ocillate .05s 1.2s linear 5 alternate forwards;
     /*animation: ocillate .5s 1.3s linear infinite alternate forwards;*/
@@ -407,7 +410,7 @@ margin-left: 50px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px white !important;
     transition: all 1s;
-    animation:rotate-taichi 2s linear infinite alternate forwards;
+    animation:rotate-taichi 1s linear infinite alternate forwards;
 }
 
 .test .row .col-12 img:hover{
