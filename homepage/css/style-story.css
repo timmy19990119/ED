@@ -302,7 +302,7 @@ a {
 #Topics{
     padding: 0 40px 0px;
     border-top: 1px solid #a68d85;
-    background:#ccaea3 /*url(../images/wave2.png) no-repeat center bottom*/;
+    background:#ccaea3;
     background-position: 100%;
     z-index: 100;
 }
@@ -368,10 +368,21 @@ a {
 /*滑鼠事件*/
 footer a:hover{
     text-decoration: none;
-    color: #f4e6e8 !important;
+    color: #fff5eb !important;
 }
 .shareBtn:hover{
     box-shadow: 0px 0px 10px white;
+}
+.mouse:hover{
+    font-size: 20px;
+    color: #fff5eb !important;
+}
+#Stories a:hover{
+    text-decoration: none;
+    color: #fff5eb !important;
+}
+#Stories img:hover{
+    mix-blend-mode: luminosity;
 }
 
 /* 小屏幕（平板，大于等于 768px） */

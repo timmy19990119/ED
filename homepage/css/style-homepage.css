@@ -303,7 +303,7 @@ a {
 #Topics {
     padding: 0 40px 0px;
     border-top: 1px solid #a68d85;
-    background: #ccaea3 /*url(../images/wave2.png) no-repeat center bottom*/;
+    background: #ccaea3;
     background-position: 100%;
     z-index: 100;
 }
@@ -444,6 +444,7 @@ a {
     text-align: left;
 }
 
+
 .corner-mark {
     font-style: mingChao;
 }
@@ -542,6 +543,13 @@ a {
     width: 20%;
     z-index: 9;
 }
+.center-1-img {
+    position: absolute;
+    top: 31%;
+    left: 40.3%;
+    width: 20%;
+    z-index: 9;
+}
 .font-18 {
     font-size: 18px;
 }
@@ -596,6 +604,7 @@ a {
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: 40%;
+    margin-right: -12px;
 }
 .row {
     margin-left: 0;
@@ -616,7 +625,7 @@ a {
     margin-bottom: 20px;
     font-size: 15px !important;
 }
-
+/*三種ED*/
 #TypeBox {
     padding: 10px 15% 50px;
     background-image: url("../images/leaf2.png");
@@ -729,16 +738,13 @@ footer a:hover{
 }
 
 /*鼠標經過產生圖片*/
-#Anorexia:hover{
-    cursor:url('../images/anorexia.png') !important;
+#TypeBox img{
+    border:none;
 }
-
-#Bulimia:hover{
-    cursor:url('../images/bulimia.png') !important;
-}
-
-#Binge:hover{
-    cursor:url('../images/binge.png') !important;
+#screenshot{
+  position:absolute;
+  display:none;
+  mix-blend-mode: darken;
 }
 
 /* 小屏幕（平板，大于等于 768px） */

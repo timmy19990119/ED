@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="./css/style-homepage.css">
-<!--     <link rel="stylesheet" href="./css/locomotive-scroll.min.css">
-    <link rel="stylesheet" href="./css/locomotive-scroll.css"> -->
     <title>AntiED</title>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
 </head>
 
 <body id="js-scroll">
@@ -48,8 +49,8 @@
             </div>
         </div>
     </nav>
+    
     <div class="container-fluid">
-
 
          <div style="margin-top: 70px;" id="main">
             <div class="section flex-center" data-wow-delay="3s">
@@ -69,8 +70,10 @@
                     <img data-0="transform:scale(0.9);top:21%" data-300="transform:scale(1.1);top:30%"
                         src="./images/righttop.png" class="righttop-img wow bounceIn" data-wow-delay=".2s">
                     <img data-0="transform:scale(1.05);bottom:10%" data-300="transform:scale(0.9);bottom:0%" src="./images/rightdown.png" class="rightdown-img wow bounceIn" data-wow-delay=".3s">
-                    <img  data-0="transform:scale(1);top:30.6%;left:40.3%" data-300="transform:scale(1.1);top:34.1%;left:40.1%"
+                    <img  data-0="transform:scale(1);top:30.6%;left:40.3%;opacity:1" data-300="transform:scale(1.1);top:34.1%;left:40.1%;opacity:0"
                     src="./images/center.png" class="center-img wow bounceIn" data-wow-delay=".25s">
+                    <img  data-0="transform:scale(1);top:30.6%;left:40.3%;opacity:0" data-300="transform:scale(1.1);top:34.1%;left:40.1%;opacity:1"
+                    src="./images/center-1.png" class="center-1-img wow bounceIn" data-wow-delay=".25s">
                 </div>
             </div>
         </div>
@@ -136,13 +139,13 @@
                                 <p>你只是病了</p>
                                 <p>没有人是希望自己得病的</p>
                             </div>
-                        </div>
 
-                        <div class="item wow slideInUp" data-wow-delay=".2s">
-                            <p>「那些长得高大粗壮的榕树</p>
-                            <p>细密的根须深深扎进地下的裂缝中」</p>
-                            <p>希望从ED的裂缝中生长而出的你</p>
-                            <p>终能过上枝繁叶茂的生活</p>
+                             <div class="item wow slideInUp" data-wow-delay=".2s">
+                                <p>那些长得高大粗壮的榕树</p>
+                                <p>细密的根须深深扎进地下的裂缝中</p>
+                                <p>希望从ED的裂缝中生长而出的你</p>
+                                <p>终能过上枝繁叶茂的生活</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -173,7 +176,7 @@
                         <div>
                             <div class="item fangSong wow slideInUp" data-wow-delay=".1s" style="font-size: 15px;">
                                進食/飲食障礙是严重但可治疗的心理與生理疾病.可影響各性别、年齡、
-                                種族、宗教、性取向、体型和體重的人。調查顯示，厭食症和暴食症在女性中更
+                                種族、宗教、性取向、体型和體重的人。調查顯示，厭食症和暴食症在女性中更為
                                 常見.其發病率約為男性的十倍。在女性一生中 ，罹患厭食症的機率約4%:貪食症
                                 或暴食症的機率約2% .在所有精神疾病中.飲食障礙具有最高的死亡率，
                             </div>
@@ -187,7 +190,7 @@
                                 serious but treatable mental and physical illnesses that can affet
                                 people of all genders, ages, races. religjons, ethricities, sexual rentations, body
                                 shapes, and weights. Surveys estimate that Anorexda and Binge are more common among women,
-                                and the incidence is about ten timnes that of men. In women's lifetime the chance of getting
+                                and the incidence is about ten times that of men. In women's lifetime the chance of getting
                                 Anorexia is about 4%; chances of getting Bulimia or Binge eating disorder is 2%.
                             </div>
                             <div class="item wow slideInUp" data-wow-delay=".4s" style="font-size: 15px;">While no one
@@ -204,71 +207,71 @@
         </div>
 
         <div id="TypeBox">
-            <div class="item wow slideInUp" data-wow-delay=".2s" id="Anorexia">
-                <div class="left" style="display: inline-flex;">
-                    <span class="LibreCaslonTextRegular" style="font-size: 25px;">Type 1 /</span>
-                    <div id="scroll_div"> 
-                        <div id="scroll_begin">
-                             <span class="pad_right LibreCaslonTextRegular">Anorexia-Nervosa</span>
-                             <span class="pad_right LibreCaslonTextRegular">Anorexia-Nervosa</span>
-                             <span class="pad_right LibreCaslonTextRegular">Anorexia-Nervosa</span>
-                             <span class="pad_right LibreCaslonTextRegular">Anorexia-Nervosa</span>
-                        </div> 
-                        <div id="scroll_end">
+            <a href="../AN/index.html" class="screenshot" rel="./images/anorexia.png" onmouseover="$('#AN').attr('src','./images/icon1-1.png');" onmouseout="$('#AN').attr('src','./images/icon1.png');">
+                <div class="item wow slideInUp" data-wow-delay=".2s" id="Anorexia">
+                    <div class="left" style="display: inline-flex;">
+                        <span class="LibreCaslonTextRegular" style="font-size: 25px;">Type 1 /</span>
+                        <div id="scroll_div"> 
+                            <div id="scroll_begin">
+                                 <span class="pad_right LibreCaslonTextRegular">Anorexia-Nervosa</span>
+                                 <span class="pad_right LibreCaslonTextRegular">Anorexia-Nervosa</span>
+                                 <span class="pad_right LibreCaslonTextRegular">Anorexia-Nervosa</span>
+                                 <span class="pad_right LibreCaslonTextRegular">Anorexia-Nervosa</span>
+                            </div> 
+                            <div id="scroll_end">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="right">
-                    <a href="../AN/index.html">
+                    <div class="right">
                         <span class="fangSong" style="font-size: 18px;">神经性厌食症</span>
-                        <img src="./images/icon1.png" class="icon1-img img-responsive" style="margin-top: -3px;">
-                    </a>
-                </div>
-            </div>
-            <div class="item wow slideInUp" data-wow-delay=".3s" id="Bulimia" >
-                <div class="left" style="display: inline-flex;">
-                    <span class="LibreCaslonTextRegular" style="font-size: 25px;">Type 2 /</span>
-                    <div id="scroll_div1"> 
-                        <div id="scroll_begin1">
-                             <span class="pad_right LibreCaslonTextRegular">Bulimia-Nervosa</span>
-                             <span class="pad_right LibreCaslonTextRegular">Bulimia-Nervosa</span>
-                             <span class="pad_right LibreCaslonTextRegular">Bulimia-Nervosa</span>
-                             <span class="pad_right LibreCaslonTextRegular">Bulimia-Nervosa</span>
-                        </div> 
-                        <div id="scroll_end1">
-                        </div>
+                        <img src="./images/icon1.png" id="AN" class="icon1-img img-responsive" style="margin-top: -3px;">
                     </div>
                 </div>
-                <div class="right">
-                     <a href="../BN/index.html">
+            </a>
+            <a href="../BN/index.html" onmouseover="$('#BN').attr('src','./images/icon1-1.png');" onmouseout="$('#BN').attr('src','./images/icon1.png');" class="screenshot" rel="./images/bulimia.png">
+                <div class="item wow slideInUp" data-wow-delay=".3s" id="Bulimia" >
+                    <div class="left" style="display: inline-flex;">
+                        <span class="LibreCaslonTextRegular" style="font-size: 25px;">Type 2 /</span>
+                        <div id="scroll_div1"> 
+                            <div id="scroll_begin1">
+                                 <span class="pad_right LibreCaslonTextRegular">Bulimia-Nervosa</span>
+                                 <span class="pad_right LibreCaslonTextRegular">Bulimia-Nervosa</span>
+                                 <span class="pad_right LibreCaslonTextRegular">Bulimia-Nervosa</span>
+                                 <span class="pad_right LibreCaslonTextRegular">Bulimia-Nervosa</span>
+                            </div> 
+                            <div id="scroll_end1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
                         <span class="fangSong" style="font-size: 18px;">神经性暴食症</span>
-                        <img src="./images/icon1.png" class="icon1-img img-responsive" style="margin-top: -3px;">
-                    </a>
-                </div>
-            </div>
-            <div class="item wow slideInUp" data-wow-delay=".4s" id="Binge">
-                <div class="left" style="display: inline-flex;">
-                    <span class="LibreCaslonTextRegular" style="font-size: 25px;">Type 3 /</span>
-                    <div id="scroll_div2"> 
-                        <div id="scroll_begin2">
-                             <span class="pad_right LibreCaslonTextRegular">Binge-Eating-Disorder</span>
-                             <span class="pad_right LibreCaslonTextRegular">Binge-Eating-Disorder</span>
-                             <span class="pad_right LibreCaslonTextRegular">Binge-Eating-Disorder</span>
-                             <span class="pad_right LibreCaslonTextRegular">Binge-Eating-Disorder</span>
-                        </div> 
-                        <div id="scroll_end2">
-                        </div>
+                        <img src="./images/icon1.png" id="BN" class="icon1-img img-responsive" style="margin-top: -3px;">
                     </div>
                 </div>
-                <div class="right">
-                    <a href="../binge/index.html">
+            </a>
+            <a href="../binge/index.html" onmouseover="$('#binge').attr('src','./images/icon1-1.png');" onmouseout="$('#binge').attr('src','./images/icon1.png');" class="screenshot" rel="./images/binge.png">
+                <div class="item wow slideInUp" data-wow-delay=".4s" id="Binge">
+                    <div class="left" style="display: inline-flex;">
+                        <span class="LibreCaslonTextRegular" style="font-size: 25px;">Type 3 /</span>
+                        <div id="scroll_div2"> 
+                            <div id="scroll_begin2">
+                                 <span class="pad_right LibreCaslonTextRegular">Binge-Eating-Disorder</span>
+                                 <span class="pad_right LibreCaslonTextRegular">Binge-Eating-Disorder</span>
+                                 <span class="pad_right LibreCaslonTextRegular">Binge-Eating-Disorder</span>
+                                 <span class="pad_right LibreCaslonTextRegular">Binge-Eating-Disorder</span>
+                            </div> 
+                            <div id="scroll_end2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
                         <span class="fangSong" style="font-size: 18px;">神经性贪食症</span>
-                        <img src="./images/icon1.png" class="icon1-img img-responsive" style="margin-top: -3px;">
-                    </a>
+                        <img src="./images/icon1.png" id="binge" class="icon1-img img-responsive" style="margin-top: -3px;">
+                    </div>
                 </div>
-            </div>
+            </a>
             <div class="bottom-box text-r wow slideInUp" data-wow-delay=".4s">
-                <p class="fangSong" style="font-size: 15px;">除三種常見種類外.還存在較少见的ED频型。如清除性疾病<span class="helvetica">&thinsp;Purging Disorder</span></p>
+                <p class="fangSong" style="font-size: 15px;">除三種常見種類外.還存在較少见的<span class="helvetica">ED</span>频型。如清除性疾病<span class="helvetica">&thinsp;Purging Disorder</span></p>
                 <p class="fangSong" style="font-size: 15px;">夜食综合症&thinsp;<span class="helvetica">Nght Eating Syndrome</span>&thinsp;和其他未有明確名博的進食失調<span class="helvetica">&thinsp;OSFED&thinsp;.</span></p>
                 <p class="fangSong" style="font-size: 15px;"> 一&thinsp;根據美國精神病學協會《精神疾病诊斷和絨叶手冊》第五版整理</p>
             </div>
@@ -339,12 +342,11 @@
                     class="img-responsive wow slideInUp " data-wow-delay="0.1s">
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4">
-                <p class=" wow slideInUp helvetica" data-wow-delay="0.2s">intied@gmail.com</p>
-                <p class="f-s wow slideInUp fangSong " data-wow-delay="0.3s">新竹市東區大學路1001號</p>
+                <p class=" wow slideInUp helvetica" data-wow-delay="0.2s"><a href="mailto:weantied@gmail.com">WeAntiED@gmail.com</a></p>
+                <p class="f-s wow slideInUp" data-wow-delay="0.3s"><a target="_blank" href="https://goo.gl/maps/jcjJDrWCKVvMtALK9" class="fangSong">新竹市東區大學路1001號</a></p>
             </div>
             <div class="col-lg-5 col-md-5 col-sm-5">
                 <p class="f-s wow slideInUp " data-wow-delay="0.1s">
-
                     <a target="_blank" href="https://www.nationaleatingdisorders.org" class="fangSong">美國進食障礙幫助協會
                         NEDA</a>
                 </p>
@@ -519,8 +521,37 @@
     }
     ScrollImgLeft2();
 </script>
+ <!-- 滑鼠懸浮連結彈出跟隨圖片 -->
+    <script>
+        this.screenshotPreview=function(){ 
+          xOffset = 10;
+          yOffset = 30;
+          $("a.screenshot").hover(function(e){
+            this.t = this.title;
+            var c = (this.t != "") ? "<br/>" + this.t : "";
+            $("body").append("<p id='screenshot'><img src='"+this.rel+"' />"+c+"</p>");         
+            $("#screenshot")
+            .css("top",(e.pageY - xOffset) + "px")
+            .css("left",(e.pageX + yOffset) + "px")
+            .fadeIn("fast");      
+          },
+          function(){
+            // this.title = this.t; 
+            $("#screenshot").remove();
+          }); 
+          $("a.screenshot").mousemove(function(e){
+            $("#screenshot")
+           .css("top",(e.pageY-xOffset)+"px")
+           .css("left",(e.pageX+yOffset)+"px");
+          });   
 
-<script>
+        };
+        $(document).ready(function(){
+          screenshotPreview();
+        });
+    </script>
+
+<!-- <script>
 //這個script應該是學長加了要調用locomotive的，但我看不太懂QQ
 const scroller = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
@@ -561,8 +592,8 @@ ScrollTrigger.create({
 ScrollTrigger.addEventListener('refresh', () => scroller.update())
 
 ScrollTrigger.refresh()
-    </script>
-</script>
+    </script> -->
+<!-- </script> -->
 
 </body>
 
