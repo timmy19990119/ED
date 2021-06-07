@@ -784,5 +784,5 @@ footer a:hover{
 
 a:visited{
 //設定已經瀏覽過的連結
-text-decoration: none;
+text-decoration: none !important;
 }
