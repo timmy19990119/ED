@@ -288,7 +288,7 @@ a {
     padding: 10px 15% 50px;
 }
 
-#eatingTextContainer .item > p{
+#eatingTextContainer .item > p {
     font-size: 15px !important;
 }
 .flex-stretch {
@@ -309,7 +309,7 @@ a {
 }
 
 #Contact {
-    background: #ccaea3  url(../images/wave6.png) no-repeat center bottom 100%;
+    background: #ccaea3 url(../images/wave6.png) no-repeat center bottom 100%;
 }
 
 #Contact .title .name {
@@ -444,7 +444,6 @@ a {
     text-align: left;
 }
 
-
 .corner-mark {
     font-style: mingChao;
 }
@@ -570,7 +569,6 @@ a {
 }
 #eatingContainer .title {
     height: 100px;
-    line-height: 100px;
 }
 .eating-mp4 {
     margin: 30px 0 50px;
@@ -615,7 +613,7 @@ a {
     background-repeat: no-repeat;
     background-size: 100%;
     padding: 100px 15% 50px;
-    background-image: url('../images/wave5.png');
+    background-image: url("../images/wave5.png");
     background-position: top left;
 }
 #DisorderBox .title {
@@ -632,7 +630,7 @@ a {
     background-position: 90% 60%;
     background-repeat: no-repeat;
     background-size: 20%;
-    background: #d9bcb2
+    background: #d9bcb2;
 }
 #TypeBox .item {
     border-bottom: 1px solid #7e7976;
@@ -674,154 +672,188 @@ a {
 }
 
 /*文字橫向輪播*/
-.pad_right{ 
-    padding-right:2em;
+.pad_right {
+    padding-right: 2em;
 }
 #scroll_div {
-    height:26px;
+    height: 26px;
     overflow: hidden;
     white-space: nowrap;
-    width:190px;
-    margin-left:45px;
+    width: 190px;
+    margin-left: 45px;
     margin-top: 10px;
+    display: none;
 }
-#scroll_begin,#scroll_end {
+#scroll_begin,
+#scroll_end {
     display: inline;
 }
 
-.pad_right{ 
-    padding-right:2em;
+.pad_right {
+    padding-right: 2em;
 }
 #scroll_div1 {
-    height:26px;
+    height: 26px;
     overflow: hidden;
-    white-space: nowrap;    /*规定段落中的文本不进行换行：*/
-    width:190px;
-    margin-left:45px;
+    white-space: nowrap; /*规定段落中的文本不进行换行：*/
+    width: 190px;
+    margin-left: 45px;
     margin-top: 10px;
+    display: none;
+
 }
-#scroll_begin1,#scroll_end1 {
+#scroll_begin1,
+#scroll_end1 {
     display: inline;
 }
 
-.pad_right{ 
-    padding-right:2em;
+.pad_right {
+    padding-right: 2em;
     font-size: 18px;
 }
 #scroll_div2 {
-    height:26px;
+    height: 26px;
     overflow: hidden;
     white-space: nowrap;
-    width:190px;
-    margin-left:45px;
+    width: 190px;
+    margin-left: 45px;
     margin-top: 10px;
+    display: none;
+
 }
-#scroll_begin2,#scroll_end2 {
+#scroll_begin2,
+#scroll_end2 {
     display: inline;
 }
 
 /*滑鼠事件*/
-footer a:hover{
+footer a:hover {
     text-decoration: none;
     color: #fff5eb !important;
 }
-#TypeBox a:hover{
+#TypeBox a:hover {
     text-decoration: none;
     color: #fff5eb !important;
 }
-.shareBtn:hover{
+.shareBtn:hover {
     box-shadow: 0px 0px 10px white;
 }
-.mouse:hover{
+.mouse:hover {
     font-size: 20px;
     color: #fff5eb !important;
 }
 
 /*鼠標經過產生圖片*/
-#TypeBox img{
-    border:none;
+#TypeBox img {
+    border: none;
 }
-#screenshot{
-  position:absolute;
-  display:none;
-  mix-blend-mode: darken;
+#screenshot {
+    position: absolute;
+    display: none;
+    mix-blend-mode: darken;
 }
 
 /* 小屏幕（平板，大于等于 768px） */
-@media (max-width: 768px）) { 
+@media (min-width: 768px）) {
     #Contact .title .call {
         margin-top: 0px;
         float: initial;
-        
     }
- }
+    .storiesTopLeft {
+        padding-right: 0;
+        border-right: none;
+    }
+    .mainStoriesBook #anna img {
+        margin-top: 0px;
+    }
+    #scroll_div,
+    #scroll_div1,
+    #scroll_div2 {
+        display: none !important;
+    }
+}
 
 /* 中等屏幕（桌面显示器，大于等于 992px） */
-@media (max-width: 992px) { 
+@media (min-width: 992px) {
     #Contact .title .call {
         margin-top: 250px;
         float: right;
-
+    }
+    .storiesTopLeft {
+        padding-right: 0;
+        border-right: none;
     }
 
-    #Contact .title .name{
+    #scroll_div,
+    #scroll_div1,
+    #scroll_div2 {
+        display: block !important;
+    }
+    #Contact .title .name {
         margin-top: 200px;
     }
- }
+}
 
- /* 大屏幕（大桌面显示器，大于等于 1200px） */
-@media (max-width: 1200px) { 
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px) {
     #Contact .title .call {
         margin-top: 255px;
         float: right;
-
     }
-    #eatingTextContainer .poem{
+    #scroll_div,
+    #scroll_div1,
+    #scroll_div2 {
+        display: block !important;
+    }
+    .storiesTopLeft {
+        padding-right: 80px;
+        position: relative;
+        border-right: 1px solid #a68d85;
+        margin-bottom: 10px;
+    }
+    #eatingTextContainer .poem {
         padding-left: 20px;
     }
- }
-
-
-a:visited{
-//設定已經瀏覽過的連結
-text-decoration: none !important;
 }
 
-.one{
+a:visited {
+    /* //設定已經瀏覽過的連結 */
+    text-decoration: none !important;
+}
+
+.one {
     position: absolute;
     left: 530px;
     bottom: 45px;
     font-size: 30px;
-/*    transform: translateX(100px);
+    /*    transform: translateX(100px);
     transition: all 5s 5s;*/
-    -webkit-animation: show .5s .2s infinite ease-out alternate;
+    -webkit-animation: show 0.5s 0.2s infinite ease-out alternate;
 }
-.two{
+.two {
     position: absolute;
     left: 550px;
     bottom: 45px;
     font-size: 30px;
-/*    transform: translateX(100px);
+    /*    transform: translateX(100px);
     transition: all 5s 5s;*/
-    -webkit-animation: show .5s .4s infinite ease-out alternate;
+    -webkit-animation: show 0.5s 0.4s infinite ease-out alternate;
 }
-.three{
+.three {
     position: absolute;
     left: 570px;
     bottom: 45px;
     font-size: 30px;
-/*    transform: translateX(100px);
+    /*    transform: translateX(100px);
     transition: all 5s 5s;*/
-    animation: show .5s .6s infinite ease-out alternate;
+    animation: show 0.5s 0.6s infinite ease-out alternate;
 }
 
-
-@keyframes show{
-    0%{
-        transform: translate(0,0);
+@keyframes show {
+    0% {
+        transform: translate(0, 0);
     }
-    100%{
-        transform: translate(5px,-5px);
+    100% {
+        transform: translate(5px, -5px);
     }
 }
-
