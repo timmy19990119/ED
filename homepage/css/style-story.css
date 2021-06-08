@@ -170,6 +170,14 @@ a {
     display: inline-block;
 }
 
+.corner-mark:hover{
+    cursor: pointer;
+}
+
+.corner-mark2:hover{
+    cursor: pointer;
+}
+
 .corner-mark2 {
     background-color: #8e6e63;
     color: #fff;
