@@ -40,7 +40,7 @@
                     <li><a class="wow bounceInDown mouse" style="font-family: mingChao" href="../ED網頁(about-us)/index.html"
                             data-wow-delay=".5s">關於我們</a></li>
                     <li class=""><a class="wow bounceInDown" href="#Contact" data-wow-delay=".5s">
-                            <img style="width: 25px;" src="./img/icon.png" onmouseover="this.src='img/icon-1.png';" onmouseout="this.src='img/icon.png';">
+                            <img style="width: 25px;" src="./images/icon.png" onmouseover="this.src='img/icon-1.png';" onmouseout="this.src='img/icon.png';">
                 </ul>
             </div>
         </div>
@@ -71,29 +71,37 @@
             暴食症患者在暴飲暴食後會覺得內疚並出現「補償行為」，通過極端的方式清除食進肚內的食物,例如：催吐，此舉會導致牙齒、食道和口腔因胃酸腐蝕，造成損傷，除了對身體健康會造成一系列的影響外，暴食症還會給患者造成巨大的心理壓力，這部分患者往往會岀現社交恐懼症、強迫症、抑鬱症等心理疾病，嚴重的患者甚至難以正常工作和生活，甚至有自殘或輕生的念頭。</div>
     
         <div id=Stories>
-        <div id=storycontent>    
+        <div id=storycontent>
+            <div class='container'>   
             <div class=karen>
-                <img class=photo src="img/diana.png" style="width:250px; margin-right:30px">
-                <div class=intro>
-                    <div class=name>Diana, Princess of Wales</div>
-                    <div class=word>/<br>
+                <div class="row"> 
+                    <img class="photo col-lg-3 col-md-4" src="img/diana.png">
+                    <div class="intro col-lg-9 col-md-8">
+                    <div class="name col-xs-12">Diana, Princess of Wales</div>
+                    <div class="word col-xs-12">/<br>
                         1981年，20歲的戴安娜與威爾士親王查爾斯訂婚後，便開始出現症狀，之後便一直受暴食症之苦。直到1988年，戴安娜才肯承認問題，接受治療</div>
                 </div>
             </div>
-            
+            </div>
             <div class=lily>
-                <img class=photo src="img/lindsay.png" style="width:250px; margin-left:30px">
-                <div class=intro>
-                    <div class=nameL>Lindsay Lohan</div>
-                    <div class=word>/<br> 
+                <div class="row">
+                <img class="photo col-lg-3 col-md-4" src="img/lindsay.png">
+                <div class="intro col-lg-9 col-md-8">
+                    <div class="nameL col-xs-12">Lindsay Lohan</div>
+                    <div class="word col-xs-12">/<br> 
                         曾在受訪時表示她因受暴食症所苦,一度想要靠吸毒，「我生病了，我也很害怕。」</div>
                 </div>
             </div>
-            
-            <div class=learn_more>
-                <img src="img/more_btn.png">
-                <img src="img/more_stories.png">
             </div>
+            <a href="../binge/index.html">
+                <div class=learn_more>
+                
+                    <img src="img/more_btn.png">
+                
+                    <img src="img/more_stories.jpg">
+                
+                </div>
+            </a>
         </div>
         </div>
     
@@ -182,18 +190,9 @@
     <script src="./js/jquery.min.js "> </script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/wow.min.js"> </script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
     <script>
         $(function () {
-
-            $('.shareBtn').click(function () {
-             $('#inputEmail,#inputName,#inputLastName,#textareaContent').val('')
-
-             //$('#shareSuccess').show()
-
-             //alert('Successfully Sent | 已傳送，感謝分享')
-             swal("Sent", "感謝分享", "success");
-        })
 
             var p = 0, t = 0; //上下滚动时隐藏导航栏
             $(window).scroll(function (e) {
@@ -214,7 +213,22 @@
                 scrollTop: 0
             }, 0);
 
-
+                    //漢堡選單
+        $('#collapse a,.navbar-brand').click(function () {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var $target = $(this.hash);
+                $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
+                console.log($target)
+                if ($target.length) {
+                    var targetOffset = $target.offset().top - 90; //  $target.offset().top: target於網頁相對位置(offset)的y座標(top) 
+                    $('html,body').animate({
+                        scrollTop: targetOffset
+                    },
+                        1000);
+                    return false;
+                }
+            }
+        })
 
             if ($(".wow").length) {
                 var wow = new WOW(
@@ -230,11 +244,6 @@
                 wow.init();
             }
         })
-
-         //鼠标移入、移出链接时，去掉下划线
-       $("a").hover( function(event){
-            $(this).css("textDecoration", "none");  
-        } );
     </script>
 
 </body>

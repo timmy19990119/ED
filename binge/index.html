@@ -40,7 +40,7 @@
                     <li><a class="wow bounceInDown mouse" style="font-family: mingChao" href="../ED網頁(about-us)/index.html"
                             data-wow-delay=".5s">關於我們</a></li>
                     <li class=""><a class="wow bounceInDown" href="#Contact" data-wow-delay=".5s">
-                            <img style="width: 25px;" src="./img/icon.png" onmouseover="this.src='img/icon-1.png';" onmouseout="this.src='img/icon.png';">
+                            <img style="width: 25px;" src="./images/icon.png" onmouseover="this.src='img/icon-1.png';" onmouseout="this.src='img/icon.png';">
                 </ul>
             </div>
         </div>
@@ -75,10 +75,15 @@
             暴食症患者通常超重或肥胖。這可能會增加他們患與超重相關的醫學病症的風險，例如心髒病、中風和 2 型糖尿病。<br>
             <br>
             總結狂食症患者在短時間內經常且不受控制地食用大量食物。與其他飲食失調的人不同的點是，他們不會清除。<br></div>
-            <div class=learn_more>
-                <img src="img/more_btn.png">
-                <img src="img/more_stories.png">
-            </div>
+            <a href="../AN/index.html">
+                <div class=learn_more>
+                
+                    <img src="img/more_btn.png">
+                
+                    <img src="img/more_stories.jpg">
+                
+                </div>
+            </a>
         
     
 
@@ -166,18 +171,10 @@
     <script src="./js/jquery.min.js "> </script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/wow.min.js"> </script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
     <script>
         $(function () {
 
-            $('.shareBtn').click(function () {
-             $('#inputEmail,#inputName,#inputLastName,#textareaContent').val('')
-
-             //$('#shareSuccess').show()
-
-             //alert('Successfully Sent | 已傳送，感謝分享')
-             swal("Sent", "感謝分享", "success");
-        })
             var p = 0, t = 0; //上下滚动时隐藏导航栏
             $(window).scroll(function (e) {
                 //下滑
@@ -197,7 +194,22 @@
                 scrollTop: 0
             }, 0);
 
-
+                    //漢堡選單
+        $('#collapse a,.navbar-brand').click(function () {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var $target = $(this.hash);
+                $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
+                console.log($target)
+                if ($target.length) {
+                    var targetOffset = $target.offset().top - 90; //  $target.offset().top: target於網頁相對位置(offset)的y座標(top) 
+                    $('html,body').animate({
+                        scrollTop: targetOffset
+                    },
+                        1000);
+                    return false;
+                }
+            }
+        })
 
             if ($(".wow").length) {
                 var wow = new WOW(
@@ -213,11 +225,6 @@
                 wow.init();
             }
         })
-
-         //鼠标移入、移出链接时，去掉下划线
-       $("a").hover( function(event){
-            $(this).css("textDecoration", "none");  
-        } );
     </script>
 
 </body>

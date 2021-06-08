@@ -40,7 +40,7 @@
                     <li><a class="wow bounceInDown mouse" style="font-family: mingChao" href="../ED網頁(about-us)/index.html"
                             data-wow-delay=".5s">關於我們</a></li>
                     <li class=""><a class="wow bounceInDown" href="#Contact" data-wow-delay=".5s">
-                            <img style="width: 25px;" src="./img/icon.png" onmouseover="this.src='img/icon-1.png';" onmouseout="this.src='img/icon.png';">
+                            <img style="width: 25px;" src="./images/icon.png" onmouseover="this.src='img/icon-1.png';" onmouseout="this.src='img/icon.png';">
                         </a></li>
                 </ul>
             </div>
@@ -75,43 +75,50 @@
             <br>
             相關研究顯示，厭食症高發年齡段為14-20歲，90%-95%的厭食症患者為女性。在大多數情況下，厭食症都以節食為開端，節食行為隨生活壓力的經歷（如父母離婚、進入新環境、或遭遇個人的失敗等）升級演變成厭食症，5%到15%的患者會因為低體重和節食帶來的併發症而死亡，是死亡率最高的精神疾病。<br><br><br><br>
         </div>
-    
         <div id=Stories>
-        <div id=storycontent>    
-            <div class=karen>
-                <img class=photo src="img/karencarpenter.png" style="width:250px; margin-right:30px">
-                <div class=intro>
-                    <div class=name>Karen Carpenter</div>
-                    <div class=word>/<br>
-                        代表作品有《Yesterday Once More》的卡朋特樂隊成員之一卡倫·卡朋特逝世時年僅32歲。卡倫生前患有嚴重的厭食症，為了保持身形長期節食、服用輕瀉劑等</div>
+        <div id=storycontent>
+            <div class='container'>
+                <div class=karen>
+                    <div class="row"> 
+                        <img class="photo col-lg-3 col-md-4" src="img/karencarpenter.png" >   
+                        <div class="intro col-lg-9 col-md-8">
+                            <div class="name col-xs-12">Karen Carpenter</div>
+                            <div class="word col-xs-12">/<br>
+                                代表作品有《Yesterday Once More》的卡朋特樂隊成員之一卡倫·卡朋特逝世時年僅32歲。卡倫生前患有嚴重的厭食症，為了保持身形長期節食、服用輕瀉劑等</div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            
-            <div class=lily>
-                <img class=photo src="img/lilycollins.png" style="width:250px; margin-left:30px">
-                <div class=intro>
-                    <div class=nameL>Lily Collins</div>
-                    <div class=word>/<br> 
-                        電影《深刻入骨》(To The Bone)中的女主角莉莉·柯林斯本人曾在自傳式小說Unfiltered提到自己青春期飽受厭食症的折磨，艾倫這一角色徬彿讓她照見自身</div>
+                <div class="lily"> 
+                    <div class="row">
+                        <img class="photo col-lg-3 col-md-4" src="img/lilycollins.png">
+                        <div class="intro col-lg-9 col-md-8">
+                            <div class="nameL col-xs-12">Lily Collins</div>
+                            <div class="word col-xs-12">/<br> 
+                                電影《深刻入骨》(To The Bone)中的女主角莉莉·柯林斯本人曾在自傳式小說Unfiltered提到自己青春期飽受厭食症的折磨，艾倫這一角色徬彿讓她照見自身</div>
+                        </div>
+                        
+                    </div>
                 </div>
-            </div>
-            <div class=louise>
-                <img class=photo src="img/louisegluck.png" style="width:250px; margin-right:30px">
-                <div class=intro>
-                    <div class=name>LouiseGlück</div>
-                    <div class=word>/<br>
-                        2020諾貝爾文學獎獲得者露易絲·格呂克曾患厭食症。16歲時，她在心理咨詢師的建議下休學，經歷了七年的精神分析才得以重新面對這「不讓你失望的世界」</div>
+                <div class="louise">
+                    <div class="row">
+                        <img class="photo col-lg-3 col-md-4" src="img/louisegluck.png" >
+                        <div class="intro col-lg-9 col-md-8">
+                            <div class="name col-xs-12">LouiseGlück</div>
+                            <div class="word col-xs-12">/<br>
+                                2020諾貝爾文學獎獲得者露易絲·格呂克曾患厭食症。16歲時，她在心理咨詢師的建議下休學，經歷了七年的精神分析才得以重新面對這「不讓你失望的世界」</div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <a href="../homepage/story.html">
+            <a href="../BN/index.html">
                 <div class=learn_more>
                 
                     <img src="img/more_btn.png">
                 
-                    <img src="img/more_stories.jpg">
+                    <img src="img/more_stories.png">
                 
                 </div>
             </a>
+            </div> 
         </div>
         </div>
     
@@ -200,20 +207,10 @@
     <script src="./js/jquery.min.js "> </script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/wow.min.js"> </script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
     <script>
         $(function () {
 
-            // 點擊分享按鈕，清除文本框內容，顯示發送成功
-        $('.shareBtn').click(function () {
-             $('#inputEmail,#inputName,#inputLastName,#textareaContent').val('')
-
-             //$('#shareSuccess').show()
-
-             //alert('Successfully Sent | 已傳送，感謝分享')
-             swal("Sent", "感謝分享", "success");
-        })
-            
             var p = 0, t = 0; //上下滚动时隐藏导航栏
             $(window).scroll(function (e) {
                 //下滑
@@ -233,7 +230,22 @@
                 scrollTop: 0
             }, 0);
 
-
+                    //漢堡選單
+        $('#collapse a,.navbar-brand').click(function () {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var $target = $(this.hash);
+                $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
+                console.log($target)
+                if ($target.length) {
+                    var targetOffset = $target.offset().top - 90; //  $target.offset().top: target於網頁相對位置(offset)的y座標(top) 
+                    $('html,body').animate({
+                        scrollTop: targetOffset
+                    },
+                        1000);
+                    return false;
+                }
+            }
+        })
 
             if ($(".wow").length) {
                 var wow = new WOW(
@@ -249,11 +261,6 @@
                 wow.init();
             }
         })
-
-         //鼠标移入、移出链接时，去掉下划线
-       $("a").hover( function(event){
-            $(this).css("textDecoration", "none");  
-        } );
     </script>
 
 </body>

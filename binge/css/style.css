@@ -311,7 +311,7 @@ a {
 }
 
 .container-fluid{
-    padding: 0;
+    padding-top: 100px;
 }
 #Topics{
     padding: 0 40px 0px;
@@ -378,10 +378,10 @@ a {
 
 
 
-
 .return{
     max-width: 1140px;
     margin:0px auto;
+    padding: 20px;
 }
 .return a{
     text-decoration: none;
@@ -515,10 +515,4 @@ a {
 footer a:hover{
     text-decoration: none;
     color: #fff5eb !important;
-}
-
-a:visited {
-//設定已經瀏覽過的連結
-color:#ffffff;
-background-color:red;
 }

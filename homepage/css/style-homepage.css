@@ -748,7 +748,7 @@ footer a:hover{
 }
 
 /* 小屏幕（平板，大于等于 768px） */
-@media (min-width: 768px）) { 
+@media (max-width: 768px）) { 
     #Contact .title .call {
         margin-top: 0px;
         float: initial;
@@ -757,7 +757,7 @@ footer a:hover{
  }
 
 /* 中等屏幕（桌面显示器，大于等于 992px） */
-@media (min-width: 992px) { 
+@media (max-width: 992px) { 
     #Contact .title .call {
         margin-top: 250px;
         float: right;
@@ -770,7 +770,7 @@ footer a:hover{
  }
 
  /* 大屏幕（大桌面显示器，大于等于 1200px） */
-@media (min-width: 1200px) { 
+@media (max-width: 1200px) { 
     #Contact .title .call {
         margin-top: 255px;
         float: right;
@@ -786,3 +786,42 @@ a:visited{
 //設定已經瀏覽過的連結
 text-decoration: none !important;
 }
+
+.one{
+    position: absolute;
+    left: 530px;
+    bottom: 45px;
+    font-size: 30px;
+/*    transform: translateX(100px);
+    transition: all 5s 5s;*/
+    -webkit-animation: show .5s .2s infinite ease-out alternate;
+}
+.two{
+    position: absolute;
+    left: 550px;
+    bottom: 45px;
+    font-size: 30px;
+/*    transform: translateX(100px);
+    transition: all 5s 5s;*/
+    -webkit-animation: show .5s .4s infinite ease-out alternate;
+}
+.three{
+    position: absolute;
+    left: 570px;
+    bottom: 45px;
+    font-size: 30px;
+/*    transform: translateX(100px);
+    transition: all 5s 5s;*/
+    animation: show .5s .6s infinite ease-out alternate;
+}
+
+
+@keyframes show{
+    0%{
+        transform: translate(0,0);
+    }
+    100%{
+        transform: translate(5px,-5px);
+    }
+}
+

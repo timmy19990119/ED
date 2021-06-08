@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="./css/style-topic.css">
     <title>Topics</title>
-      <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <!-- <script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script> -->
     <script src="./js/script.js"></script>
 </head>
 
-<body style="overflow-x: hidden !important;" id="js-scroll">
+<body id="js-scroll">
 
-    <nav class='m-nav navbar navbar-inverse navbar-fixed-top'>
+<nav class='m-nav navbar navbar-inverse navbar-fixed-top'>
         <div class='container'>
             <div class='navbar-header' data-scroll data-scroll-direction="horizontal" data-scroll-speed="-2"
                 data-scroll-position="top" data-scroll-target="#header">
@@ -24,20 +25,25 @@
                     <span class='icon-bar'></span>
                     <span class='icon-bar'></span>
                 </button>
-                <a data-wow-delay=".1s" class="navbar-brand wow bounceInDown" href="#main">
-                    <img class="img-responsive m-logo" src="./images/top.png" style="margin-left: 3px" alt="">
+                <a data-wow-delay=".1s" class="navbar-brand wow bounceInDown" href="#">
+                    <img class="img-responsive m-logo" src="./images/top.png" onmouseover="this.src='./images/top-1.png';" onmouseout="this.src='./images/top.png';" style="margin-left: 3px">
                 </a>
             </div>
             <div id='collapse' class='collapse navbar-collapse' data-scroll data-scroll-speed="-8"
                 data-scroll-position="top" data-scroll-target="#header" data-scroll-repeat>
                 <ul class='nav navbar-nav navbar-right'>
-                    <li><a class="wow bounceInDown" style="font-family: mingChao" href="../homepage/index.html" data-wow-delay=".1s" style="">何为ED</a></li>
-                    <li><a class="wow bounceInDown" style="font-family: mingChao" href="../ED網頁(自我測驗)/index.html" data-wow-delay=".2s">自测量表</a></li>
-                    <li><a class="wow bounceInDown" style="font-family: mingChao" href="../homepage/story.html" data-wow-delay=".3s">故事驛站</a></li>
-                    <li><a class="wow bounceInDown" style="font-family: mingChao" href="../話題廣場/topic.html" data-wow-delay=".4s">話題廣場</a></li>
-                    <li><a class="wow bounceInDown" style="font-family: mingChao" href="../ED網頁(about-us)/index.html" data-wow-delay=".5s">關於我們</a></li>
-                    <li class="header-laster"><a class="wow bounceInDown" href="#Contact" data-wow-delay=".5s">
-                            <img style="width: 25px;" src="./images/icon.png" alt="">
+                    <li><a class="wow bounceInDown mouse" style="font-family: mingChao" href="../homepage/index.html"
+                            data-wow-delay=".1s" style="">何为&thinsp;<span class="helvetica0">ED</span></a></li>
+                    <li><a class="wow bounceInDown mouse" style="font-family: mingChao" href="../ED網頁(自我測驗)/index.html"
+                            data-wow-delay=".2s">自测量表</a></li>
+                    <li><a class="wow bounceInDown mouse" style="font-family: mingChao" href="../homepage/story.html"
+                            data-wow-delay=".3s">故事驛站</a></li>
+                    <li><a class="wow bounceInDown mouse" style="font-family: mingChao" href="#"
+                            data-wow-delay=".4s">話題廣場</a></li>
+                    <li><a class="wow bounceInDown mouse" style="font-family: mingChao" href="../ED網頁(about-us)/index.html"
+                            data-wow-delay=".5s">關於我們</a></li>
+                    <li class=""><a class="wow bounceInDown" href="#Contact" data-wow-delay=".5s">
+                            <img style="width: 25px;" src="./images/icon.png" onmouseover="this.src='./images/icon-1.png';" onmouseout="this.src='./images/icon.png';">
                         </a></li>
                 </ul>
             </div>
@@ -50,41 +56,42 @@
         <div class="container pd-bt-40" style="margin-top: 70px;" id="main">
             <div class="row flex-start col-md-12 col-xs-12 col-sm-12 wow bounceIn" data-wow-delay="0.4s">
                 <div class="col-md-12 storiesTopLeft wow bounceIn" data-wow-delay=".6s" id="title">
-                    <img src="./images/bodyimage.png" class="img-responsive" alt="" data-wow-delay=".6s">
+                    <img src="./images/bodyimage.png" class="img-responsive" id="firstpic" alt="" data-wow-delay=".6s">
                 </div>
             </div>
-            <div class="row flex-end col-md-8 col-md-offset-4 col-ms-12 col-xs-12  wow bounceIn" data-wow-delay=".7s">
+            <div class="row flex-end col-md-8 col-md-offset-5 col-ms-12 col-xs-12  wow bounceIn" data-wow-delay=".7s">
                 <div class="storiesTopLeft wow bounceIn" data-wow-delay=".6s" id="intro">
-                    <p class="fangSong"  style="font-size: 16px;">身體形象自我認知問題，是过度崇拜不健康的瘦削体态的现代社會中的常見問題。因为习惯性地使用不切實際的「完美」標准来对照自身，許多人在追求完美体态的过程中可能會感到沮喪、焦慮、自我厭倦，甚至触发进食障碍等精神疾病。如媒體中減肥相關的热点话题，總是會无形中给对自己身材现状不满者制造压力。</p></br>
+                    <p class="fangSong"  style="font-size: 16px;">身體形象自我認知問題，是过度崇拜不健康的瘦削体态的现代社會中的常見問題。因为习惯性地使用不切實際的「完美」標准来对照自身，許多人在追求完美体态的过程中可能會感到沮喪、焦慮、自我厭倦，甚至触发进食障碍等精神疾病。如媒體中減肥相關的热点话题，總是會给对自己身材现状不满者制造无形中的压力。</p></br>
                     <p style="font-family: helvetica; font-weight: 300;"><span class="italic helvetica">Body image issues</span> are a common problem in a society that promotes unrealistic and homogeneous body
                     idevals, it is challenging to not get caught up in comparing oneself to these unrealistic standards.
                     As a result, many people may experience depression, anxiety, self-loathing and even develop
                     Eating Disorders after failing to lose weight. Topics in Social Media, for instance, relevant to
                     losing weight, can always intensify the stress.</p><br>
-                    <img src="./images/mainpic.png" class="img-responsive" alt="" data-wow-delay=".6s" style="width: 100%;">
+                    <div id="chp001">
+                        <img src="./images/mainpic.png" class="img-responsive" alt="" data-wow-delay=".6s" style="width: 99%;"><br>
+                    </div>
                 </div>
             </div>
         </div>
 
     </div>
-
+<!-- 文字條 -->
     <div class="container">
-        <div class="row" style="padding: 70px  0 ;margin-bottom: 90px;">
+        <div class="row" style="padding: 40px 0 55px 0;margin-bottom: 90px;">
 
             <div class="col-lg-4 col-md-4 col-xs-4 col-ms-4" style="opacity: 90%;">
                 <img data-wow-delay=".1s" style="transform: rotate(338deg);position: absolute; left: 100%;" src="./images/wen11.png"
                     class="img-responsive wow bounceIn"  alt="">
                 <img data-wow-delay=".5s" style="transform: rotate(30deg);" src="./images/wen13.png" class="img-responsive wow bounceIn"
                     alt="">
-                <img data-wow-delay=".2s" style="transform: rotate(358deg);" src="./images/wen8.png" class="img-responsive wow bounceIn"
+                <img data-wow-delay=".2s" style="transform: rotate(358deg);max-width: 80%;" src="./images/wen8.png" class="img-responsive wow bounceIn"
                     alt="">
-                <img data-wow-delay=".3s" style="transform: rotate(334deg); max-width: 135%;" src="./images/wen4.png"
+                <img data-wow-delay=".3s" style="transform: rotate(338deg); max-width: 135%;" src="./images/wen4.png"
                     class="img-responsive wow bounceIn" alt="">
                 <img data-wow-delay=".4s" style="transform: rotate(348deg);position:absolute;left: 20%;" src="./images/wen6.png"
                     class="img-responsive wow bounceIn" alt="">
                 <img data-wow-delay=".1s" style="transform: rotate(12deg);max-width: 300%; position: absolute; left: 0;"
                     src="./images/wen1.png" class="img-responsive wow bounceIn" alt="">
-
             </div>
             <div class="col-lg-4 col-md-4 col-xs-4 col-ms-4" style="opacity: 90%;">
                 <img data-wow-delay=".3s" style="transform: rotate(350deg);position: absolute; bottom: -20%;" src="./images/wen3.png" class="img-responsive wow bounceIn" alt="">
@@ -92,487 +99,267 @@
                 bottom: 40%;" src="./images/wen5.png" class="img-responsive wow bounceIn" alt="">
                 <img  data-wow-delay=".5s"style="transform: rotate(2deg);    position: absolute;
                 bottom: 10%;" src="./images/wen9.png" class="img-responsive wow bounceIn" alt="">
-
-
-
             </div>
             <div class="col-lg-4 col-md-4 col-xs-4 col-ms-4" style="opacity: 90%;"  id="wen">
                 <img data-wow-delay=".4s" style="transform: rotate(347deg);position: absolute; bottom: 120%; max-width: 70%" src="./images/wen7.png" class="img-responsive wow bounceIn" alt="">
-                <img  data-wow-delay=".3s"style="transform: rotate(335deg);position: absolute; max-width: 78%;" src="./images/wen12.png" class="img-responsive wow bounceIn" alt="">
+                <img  data-wow-delay=".3s"style="transform: rotate(335deg);position: absolute; max-width: 76%;right:-9%;" src="./images/wen12.png" class="img-responsive wow bounceIn" alt="">
                 <img  data-wow-delay=".3s" style="transform: rotate(8deg); position: absolute;
                     bottom: -5%;" src="./images/wen10.png" class="img-responsive wow bounceIn" alt="">
                 <img  data-wow-delay=".4s" style="transform: rotate(8deg);max-width: 50%;
             position: absolute;" src="./images/wen2.png" class="img-responsive wow bounceIn" alt="">
-                <img data-wow-delay=".3s" style="transform: rotate(19deg); max-width: 50%; right:-10%;bottom: 5%;
+                <img data-wow-delay=".3s" style="transform: rotate(19deg); max-width: 60%; right:-10%;bottom: 20%;
                 position: absolute;" src="./images/wen14.png" class="img-responsive wow bounceIn" alt="">
             </div>
 
         </div>
             <div class="row" style="margin-top: -50px;">
                 <div class="col-lg-6 col-md-6 section2-left"  id="billie">
-                    <img src="./images/contact_billie.png" class="img-responsive wow lightSpeedIn" data-wow-delay=".1s" alt="" style="margin-bottom: -10px; margin-top: -20px; width: 90%;">
-                    <p class="mar-top-40 text-l f-s wow slideInUp" data-wow-delay=".1s">/</p>
-                    <p class="text-l f-s wow slideInUp" data-wow-delay=".2s"> 我穿著宽鬆舒適的衣服，就不是女人了嗎？</p>
-                    <p class="text-l f-s wow slideInUp" data-wow-delay=".25s"> 我穿著性感貼身的衣服，就是蕩婦嗎？</p>
-                    <p class="text-l f-s wow slideInUp" data-wow-delay=".3s"> 你們從沒見過我的身體，</p>
-                    <p class="text-l f-s wow slideInUp" data-wow-delay=".35s">卻每天對它指指點點，</p>
-                    <p class="text-l f-s wow slideInUp" data-wow-delay=".4s"> 甚至延伸到我的人格。</p>
-                    <p class="text-l f-s wow slideInUp" data-wow-delay=".455"> 為什麼？憑什麼？</p>
-                    <p class="text-l f-s wow slideInUp" data-wow-delay=".5s"> 我的身體什麼樣，</p>
-                    <p class="text-l f-s wow slideInUp" data-wow-delay=".555s"  style="margin-bottom: 20px;"> 與你何干？ </p>
+                    <div id="chp002">
+                        <img src="./images/contact_billie.png" class="img-responsive wow lightSpeedIn" data-wow-delay=".1s" alt="" style="margin-left:0px; margin-top: -20px; width: 100%;">
+                    </div>
+                    <div style="margin-top: -20px;margin-bottom: 20px;">
+                        <p class="mar-top-40 text-l f-s wow slideInUp" data-wow-delay=".1s">/</p>
+                        <p class="text-l f-s wow slideInUp" data-wow-delay=".2s"> 我穿著宽鬆舒適的衣服，就不是女人了嗎？</p>
+                        <p class="text-l f-s wow slideInUp" data-wow-delay=".3s"> 我穿著性感貼身的衣服，就是蕩婦嗎？</p>
+                        <p class="text-l f-s wow slideInUp" data-wow-delay=".4s"> 你們從沒見過我的身體，卻每天對它指指點點，甚至延伸到我的人格。</p>
+                        <p class="text-l f-s wow slideInUp" data-wow-delay=".5s"> 為什麼？憑什麼？我的身體什麼樣，與你何干？</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-
-        <div id="Stories">
-            <div class="section fangSong  stories-list">
-                <div class="container" style="padding:0;display: flex;flex-wrap: wrap;">
-                    <div class="col-md-12 col-xs-12 col-sm-12 mainStories">
-                        <img src="images/faq.png" style="width: 20%; margin-top: -40px; margin-left: -20px;">
-                        <!-- <div store-item>
-                            <div class="col-md-4">
-                                <h3 class="helvetica-bold italic">#Be Body Kind</h3>
-                                <img src="images/campaign1.png" alt="">
-                                <p style="font-family: helvetica; font-weight: 300;margin-bottom: -30px;">Mental Health Foundation: 30% of adults feel stressed by body image or
-                                    appearance that they felt overwhel-<br>med or unable to cope. That’s almost 1 in every 3 people.
-                                    In 2019, we ran a UK-wide campaign on body image. 
-                                </p>
-                                <a href="https://www.mentalhealth.org.uk/get-involved/campaigns/body-image"><img src="images/→.png" alt="" style="width: 15%"></a>
-                            </div>
-                            <div class="col-md-4">
-                                <h3 class="helvetica-bold italic">#My Body My Choice</h3>
-                                <img src="images/campaign2.png" alt="">
-                                <p style="margin-bottom: -30px;"><span style="font-family: helvetica; font-weight: 300;">Cécile Dormeau:</span>人们最无法接纳的，往往是自己身体上的真实。我只想让更多女性樂於接受自己的身份，並且欣赏她们带给这个世界的东西，而且非常重要的是，她们为自己的外觀感到骄傲——无论身材各異或肤色如何。</span>
-                                </p>
-                                <a href="https://www.facebook.com/ceciledormeauillustration"><img src="images/→.png" alt="" style="width: 15%"></a>
-                            </div>
-                            <div class="col-md-4">
-                                <h3 class="helvetica-bold italic">#The Body Positivity</h3>
-                                <img src="images/campaign3.png" alt="">
-                                <p style="margin-bottom: -30px;">美國的<span style="font-family: helvetica; font-weight: 300;">Connie</span>和<span style="font-family: helvetica; font-weight: 300;">Deb</span>於<span style="font-family: helvetica; font-weight: 300;">1996</span>年因關注厭食症等進食障礙問題而決定成立機構<span style="font-family: helvetica; font-weight: 300;">The Body
-                                    Positive</span>，同時寫書鼓勵人們接納和擁抱自己的身體，推翻社會單一的審美標準。運動宗旨為幫助人們擺脫對身體的仇恨，改善自我形象。
-                                </p>
-                                <a href="https://thebodypositive.org/"><img src="images/→.png" alt="" style="width: 15%"></a>
-                            </div>
-                        </div> -->
-                    </div>
-        <!--             <div class="col-md-4 col-xs-12 col-sm-12 wow slideInUp  mainStoriesBook" data-wow-delay="0.5s">
-                        <div class="col-md-8 col-md-offset-2 wow slideInUp" id="anna">
-                            <a href="https://book.douban.com/subject/35217679/"><img src="./images/anna.png" class="img-responsive" alt=""></a>
-                        </div>
-                    </div> -->
+<!-- Campaign -->
+    <div id="Stories">
+        <div class="section fangSong  stories-list">
+            <div class="container" style="padding:0;display: flex;flex-wrap: wrap;">
+                <div class="col-md-12 col-xs-12 col-sm-12 mainStories">
+                    <img src="images/faq.png" style="width: 25%; margin-top: -40px; margin-left: -20px;">
                 </div>
-                <!-- 一行三列部分 -->
-                <div style="background-color: #ccaea3; padding:0">
-                    <div class="container" style="padding:0;display: flex;flex-wrap: wrap;">
-                        <div class="col-md-4" >
-                            <div class="store-item">
-                                   <div class="name2 wow slideInUp" style="font-size: 20px;"> <h3 class="helvetica-bold italic">#Be Body Kind</h3>
-                                    </div>
-                                    <div class="author wow slideInUp helvetica">Mental Health Foundation</div>
-                                    <div class=" wow slideInUp flex">
-                                        <img src="./images/campaign1.png" class="img-responsive" alt="">
-                                    </div>
-                                <div class="desc">
-                                        <div class="wow slideInUp fangSong" style="font-family: helvetica; font-weight: 300;margin-bottom: -30px;">Mental Health Foundation: 30% of adults feel stressed by body image or
-                                    appearance that they felt overwhelmed or unable to cope. That’s almost 1 in every 3 people.
-                                    In 2019, we ran a UK-wide campaign on body image. 
+            </div>
+            <!-- 一行三列部分 -->
+            <div style="background-color: #ccaea3; padding:0">
+                <div class="container" style="padding:0;display: flex;flex-wrap: wrap;">
+                    <div class="col-md-4" >
+                        <div class="store-item" id="CampaignBox1">
+                            <a target="_blank" href="https://www.mentalhealth.org.uk/get-involved/campaigns/body-image">
+                                <div class="name2 wow slideInUp" style="font-size: 20px;"> <h3 class="helvetica-bold italic">#Be Body Kind</h3>
                                 </div>
+                                <div class="author wow slideInUp helvetica">Mental Health Foundation
+                                </div>
+                                <div class=" wow slideInUp flex" id="campaign1">
+                                    <img src="./images/campaign1.png" class="img-responsive" alt="">
+                                </div>
+                                <div class="desc">
+                                    <div class="wow slideInUp fangSong" style="font-family: helvetica; font-weight: 300;margin-bottom: -30px;font-size: 16px;">Mental Health Foundation: 30% of adults in UK feel stressed by body image or the
+                                    appearance that they felt overwhelmed or unable to cope. That’s almost 1 in every 3 people.
+                                    So in 2019, we ran a UK-wide campaign on body image...
+                                    </div>
                                 </div>
                                 <br>
                                 <br>
                                 <div class="wow slideInUp">
-                                    <a href="https://www.mentalhealth.org.uk/get-involved/campaigns/body-image"><img src="images/→.png" alt="" style="width: 15%"></a>  
+                                    <img src="images/icon1-1.png" id="white-arrow1" class="hide" alt="" style="width: 15%; cursor: pointer;">
+                                    <img src="images/icon1.png" id="red-arrow1" alt="" style="width: 15%; cursor: pointer;">
                                 </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class=" store-item">
-	                                <div class="name2 wow slideInUp" style="font-size: 20px;"> <h3 class="helvetica-bold italic">#My Body My Choice</h3>
-	                                </div>
-	                                <div class="author wow slideInUp helvetica">Cécile Dormeau</div>
-	                                <div class=" wow slideInUp flex">
-	                                    <img src="./images/campaign2.png" class="img-responsive" alt="">
-	                                </div>
-                                <div class="desc">
-                                    <div class="wow slideInUp fangSong"><span style="font-family: helvetica; font-weight: 300;padding-top: 10px;">Cécile Dormeau:</span>人们最无法接纳的，往往是自己身体上的真实。我只想让更多女性樂於接受自己的身份，並且欣赏她们带给这个世界的东西，而且非常重要的是，她们为自己的外觀感到骄傲——无论身材各異或肤色如何。<br>
-                                </div>
-                            </div>
-                            <br>
-                            <div class="wow slideInUp">
-                                <a href="https://www.facebook.com/ceciledormeauillustration"><img src="images/→.png" alt="" style="width: 15%"></a>  
-                            </div>
+                            </a>
                         </div>
                     </div>
 
-                        <div class="col-md-4">
-                            <div class="store-item">
-	                                <div class="name2 wow slideInUp" style="font-size: 20px;"> <h3 class="helvetica-bold italic">#The Body Positivity</h3>
-                                    </div>
-	                                <div class="author wow slideInUp helvetica">Connie & Deb</div>
-	                                <div class=" wow slideInUp flex">
-                                        <img src="./images/campaign3.png" class="img-responsive" alt="">
-                                    </div>
-                                <div class="desc">
-                                    <div class="wow slideInUp fangSong">美國的<span style="font-family: helvetica; font-weight: 300;">Connie</span>和<span style="font-family: helvetica; font-weight: 300;">Deb</span>於<span style="font-family: helvetica; font-weight: 300;">1996</span>年因關注厭食症等進食障礙問題而決定成立機構<span style="font-family: helvetica; font-weight: 300;">The Body
-                                    Positive</span>，同時寫書鼓勵人們接納和擁抱自己的身體，推翻社會單一的審美標準。運動宗旨為幫助人們擺脫對身體的仇恨，改善自我形象。<br>
+                    <div class="col-md-4">
+                        <div class=" store-item" id="CampaignBox2">
+                            <a target="_blank" href="https://www.facebook.com/ceciledormeauillustration">
+                                <div class="name2 wow slideInUp" style="font-size: 20px;"> <h3 class="helvetica-bold italic">#My Body My Choice</h3>
                                 </div>
-                            </div>
-                            <br>
-                            <div class="wow slideInUp">
-                                <a href="https://thebodypositive.org/"><img src="images/→.png" alt="" style="width: 15%"></a>  
-                            </div>
+                                <div class="author wow slideInUp helvetica">Cécile Dormeau
+                                </div>
+                                <div class=" wow slideInUp flex" id="campaign2">
+                                    <img src="./images/campaign2.png" class="img-responsive" alt="">
+                                </div>
+                                <div class="desc">
+                                    <div class="wow slideInUp fangSong" style="font-size: 16px;">法國插畫師<span style="font-family: helvetica; font-weight: 300;padding-top: 10px;font-size: 16px;">&thinsp;Cécile Dormeau&thinsp;</span>認為:人们最无法接纳的，往往是自己身体上的真实。我只想让更多女性樂於接受自己的身份，並且欣赏她们带给这个世界的东西，而且非常重要的是，她们为自己的外觀感到骄傲——无论身材各異或肤色如何。<br>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="wow slideInUp">
+                                    <img src="images/icon1-1.png" id="white-arrow2" class="hide" alt="" style="width: 15%; cursor: pointer;">
+                                    <img src="images/icon1.png" id="red-arrow2" alt="" style="width: 15%; cursor: pointer;">
+                                </div>
+                            </a>
                         </div>
-                </div>
-<!-- 
-           <div class="getMore wow slideInUp">
-                <button class="LibreCaslonTextRegular" style="margin-top: 60px;">SHOW MORE</button>
-            </div> -->
+                    </div>
 
-            </div>
+                    <div class="col-md-4">
+                        <div class="store-item" id="CampaignBox3">
+                            <a target="_blank" href="https://thebodypositive.org/">
+                                <div class="name2 wow slideInUp" style="font-size: 20px;"> <h3 class="helvetica-bold italic">#The Body Positivity</h3>
+                                </div>
+                                <div class="author wow slideInUp helvetica">Connie & Deb</div>
+                                <div class=" wow slideInUp flex" id="campaign3">
+                                    <img src="./images/campaign3.png" class="img-responsive" alt="">
+                                </div>
+                                <div class="desc">
+                                    <div class="wow slideInUp fangSong" style="font-size: 16px;">美國的<span style="font-family: helvetica; font-weight: 300;font-size: 16px;">&thinsp;Connie&thinsp;</span>和&thinsp;<span style="font-family: helvetica; font-weight: 300;">Deb&thinsp;</span>於<span style="font-family: helvetica; font-weight: 300;">1996&thinsp;</span>年因關注厭食症等進食障礙問題而決定成立機構<span style="font-family: helvetica; font-weight: 300;">&thinsp;The Body Positive</span>,同時通過寫書來鼓勵人們去接納和擁抱自己的身體，傾覆社會單一化的審美評判標準。運動宗旨為幫助人們擺脫對身體的仇恨，改善自我形象。<br>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="wow slideInUp">
+                                    <img src="images/icon1-1.png" id="white-arrow3" class="hide" alt="" style="width: 15%; cursor: pointer;">
+                                    <img src="images/icon1.png" id="red-arrow3" alt="" style="width: 15%; cursor: pointer;">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
         </div>
-    
+    </div>
+<!-- Exhibition -->
     <div class="container-fluid pd-bt-40" style="margin-top: -100px;">
         <div class="col-md-12 col-xs-12 col-sm-12 mainStories wow slideInUp">
             <div class="two-exh w">
                 <div class="exh-top">
-                    <img src="images/faqex.png" alt="" style="width: 20%; margin-top: -40px; margin-left: -20px;">
+                    <img src="images/faqex.png" alt="" style="width: 25%; margin-top: -40px; margin-left: -20px;">
                 </div>
                 <div class="exh-contner">
                     <div>
-                        <img src="images/exh1.png" alt="">
+                        <img src="images/exh1.png" onmouseover="this.src='./images/exh1-1.png';" onmouseout="this.src='./images/exh1.png';" alt="">
                     </div>
                     <div>
-                        <img src="images/exh2.png" alt="">
+                        <img src="images/exh2.png" onmouseover="this.src='./images/exh2-1.png';" onmouseout="this.src='./images/exh2.png';" alt="">
                     </div>
                     <div>
                         <i>
                             2021/5/14 - 2021/6/14 </br>
                             Himalayas Museum, Shanghai</br>
-                            Curator: 張沁文
+                            Curator: Qingwen Zhang<br>
+                            <br>
                         </i>
-                        <img src="images/→.png" alt="">
+                            <span  style="font-family: fangSong;">
+                                策展團隊：<a target="_blank" class="fangSong" href="https://weibo.com/n/%E5%B0%91%E5%A5%B3%E7%A5%9E%E5%A9%86%E5%A9%86"><i class="helvetica">@</i>少女神婆婆</a><br>
+                                主辦單位：<a target="_blank" class="fangSong" href="https://weibo.com/n/%E5%96%9C%E7%8E%9B%E6%8B%89%E9%9B%85%E7%BE%8E%E6%9C%AF%E9%A6%86"><i class="helvetica">@</i>喜馬拉雅美術館</a>
+                            </span>
+                        
+                        <img src="images/bodyex.png" alt="">
                     </div>
                     <div>
-
+                        <div class="getMore wow slideInUp" style="display: flex; align-items: center; width: 100%">
+                            <a target="_blank" href="https://daydaynews.cc/zh-hant/psychological/1145781.html"><button class="LibreCaslonTextRegular">LEARN MORE</button></a>
+                        </div>
                     </div>
                     <div>
-                        <img src="images/exh3.png" alt="">
-                        <i>
-                            # About Body Shaming # </br>
-                            # 中國首個身材焦慮展 # </br>
-                            # 你的价值不在於稱上 #
+                        <img src="images/exh3.png" onmouseover="this.src='./images/exh3-1.png';" onmouseout="this.src='./images/exh3.png';" alt="">
+                        <i style="font-family: helvetica;">
+                            # &thinsp; NOBODY IS FREE &thinsp; # </br>
+                            # &thinsp; No, BODY IS FREE&thinsp; # </br>
+                                # &thinsp; <span style="font-family: fangSong;">中國首個身材焦慮展</span> &thinsp; # </br>
+                                # &thinsp; <span style="font-family: fangSong;">你的价值不在於秤上</span> &thinsp; #
+                            </span>
                         </i>
                     </div>
                     <div>
-                        <img src="images/exh4.png" alt="">
+                        <img src="images/exh4.png" onmouseover="this.src='./images/exh4-1.png';" onmouseout="this.src='./images/exh4.png';" alt="">
                         <img src="images/ribbon.png" alt="">
                     </div>
                     <div>
-                        <img src="images/exh5.png" alt="">
+                        <img src="images/exh5.png" onmouseover="this.src='./images/exh5-1.png';" onmouseout="this.src='./images/exh5.png';" alt="">
                     </div>
                     <div>
-                        <img src="images/exh7.png" alt="">
+                        <img src="images/exh7.png" onmouseover="this.src='./images/exh7-1.png';" onmouseout="this.src='./images/exh7.png';" alt="">
                     </div>
                     <div>
-                        <img src="images/exh6.png" alt="">
+                        <img src="images/exh6.png" onmouseover="this.src='./images/exh6-1.png';" onmouseout="this.src='./images/exh6.png';" alt="">
                     </div>
                 </div>
             </div>
         </div>
-           <div class="plate-base">
+<!--         <div class="plate-base">
 
-            </div>
+        </div> -->
     </div>
 
-
-    <div class="container-fluid pd-bt-40" style="margin-top: -100px;">
+<!-- Film & Video -->
+    <div class="container-fluid pd-bt-40" style="margin-top: -200px;">
         <div class="col-md-12 col-xs-12 col-sm-12 mainStories">
             <div class="plate-three">
-            <div class="three-fl">
-                <div class="fl-top w">
-                    <img src="images/faqfl.png" style="width: 22%; margin-top: -40px; margin-left: -5px;">
-                </div>
-                <div class="fl-mid w fix-btw wow bounceIn " data-wow-delay=".7s">
-                    <div class="fl-mid-left wow slideInUp">
-                        <div>
-                            <div style="font-family: helvetica">
-                                <h3>To The Bone </h3>
-                                <h4>July 2017</h4>
+                <div class="three-fl">
+                    <div class="fl-top w">
+                        <img src="images/faqfl.png" style="width: 25%; margin-top: -220px; margin-left: -5px;">
+                    </div>
+                    <div class="fl-mid w fix-btw wow bounceIn " data-wow-delay=".7s" style="margin-top: -40px;">
+                        <div class="fl-mid-left wow slideInUp">
+                            <div>
+                                <div style="font-family: helvetica; margin-top: -26px;">
+                                    <h3>To The Bone <span class="mingChao" style="font-size: 20px;">（《骨瘦如柴》)</span></h3>
+                                    <i>July 2017</i>
+                                </div>
+                                <div>
+                                    <p style="font-family: fangSong;padding-top: -40px;font-style: italic; font-size: 15px; color:#997d73;">
+                                        這部電影令人尊敬, 它沒有像令人擔心的那樣, 浪漫化厭食症這種疾病,以及受這種疾病折磨的年輕女性
+                                    </p>
+                                </div>
                             </div>
                             <div>
-                                <p style="font-family: fangSong">
-                                    「這部電影是一部令人尊敬的、感性的作品，並且沒有像有些人擔心的那樣，浪漫化厭食症這種疾病，和受這種疾病折磨的年輕女性。」
+                                <p style="font-family: fangSong;">
+                                    <br>
+                                    艾倫（莉莉·柯林斯飾）是個患有厭食症的 20 歲女孩，她的青少年時期大部分花在參加各種康復計畫之上，但每一次結束後體重卻不增反減。她的問題家庭決定要找出辦法，便同意送她到由非傳統醫師所帶領的少年之家。艾倫對少年之家不尋常的規定感到驚訝，也受到其他病患的吸引；她必須為了自己去探索如何面對成癮問題，並試著接納自己，才有機會對抗心魔。
+                                </p>
+                                <p style="font-family: helvetica; font-weight: 300;">
+                                    Ellen is an unruly, 20-year-old young woman with anorexia nervosa who spent the better
+                                    part of her teenage years being shepherded through various recovery programs, only to
+                                    find herself several pounds lighter every time. Determined to find solutions, her
+                                    dysfunctional family agrees to send her to a group home for youths, which is led by a
+                                    non-traditional doctor. To the Bone is now streaming on Netflix. </p>
+                            </div>
+                            <div>
+                                <p style="font-family: helvetica; font-weight: 300;">
+                                    <b>Director</b>: Marti Noxon <br>
+                                    <b>Writer</b>: Marti Noxon <br>
+                                    <b>Stars</b>: Rebekah Kennedy, Lily Collins, Dana L. Wilson
                                 </p>
                             </div>
                         </div>
-                        <div>
-                            <p style="font-family: helvetica">Ellen is an unruly, 20-year-old young woman with anorexia nervosa who spent the better
-                                part of her teenage years being shepherded through various recovery programs, only to
-                                find herself several pounds lighter every time. Determined to find solutions, her
-                                dysfunctional family agrees to send her to a group home for youths, which is led by a
-                                non-traditional doctor. To the Bone is now streaming on Netflix. </p>
+                        <div class="fl-mid-right" id="bone" style="width: 30%; margin-left: 26px;margin-top: 0px;">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=705yRfs6Dbs"><img src="images/fl1.png" alt=""></a>
                         </div>
-                        <div>
-                            <p style="font-family: helvetica">
-                                Director: Marti Noxon <br>
-                                Writer: Marti Noxon <br>
-                                Stars: Rebekah Kennedy, Lily Collins, Dana L. Wilson
-                            </p>
-                        </div>
-                    </div>
-                    <div class="fl-mid-right" style="width: 25%;">
-                        <img src="images/fl1.png" alt="">
-                        <!-- <img src="images/Shape 7.png" alt=""> -->
                     </div>
                 </div>
-                <!-- <div class="fl-bottom">
-                    <div class="carousel">
-                        <div class="btn-l">
-                            <img src="images/_1.png" >
-                        </div>
-                        <div class="fl-bottom-con w">
-                            <div class="carousel-contrian">
-                                <div class="carousel-box">
-                                    <div class="fl-bottom-list">
-                                        <div>
-                                            <h3 style="font-family: helvetica;font-weight: 500;font-size: 28px;">Sharing the Secret</h3>
-                                            <span>2000</span>
-                                            <div>
-                                                <img src="images/fl2.png" alt="">
-                                                <img src="images/Shape 7.png" alt="">
-                                            </div>
-                                            <p style="font-family: helvetica;font-weight: 300;font-size: 15px;">A teenage girl's struggle life suffering from bulimia who secretly binges and
-                                                purges,
-                                                because she feels that she must always seem happy for her parents and friends.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="fl-bottom-list">
-                                        <div>
-                                            <h3 style="font-family: helvetica;font-weight: 500;font-size: 28px;">Starving in Suburbia</h3>
-                                            <span>2000</span>
-                                            <div>
-                                                <img src="images/fl3.png" alt="">
-                                                <img src="images/Shape 7.png" alt="">
-                                            </div>
-                                            <p style="font-family: helvetica;font-weight: 300;font-size: 15px;">A 17-year-old dancer joins a "th-
-                                                inspiration" website and devotes herself to the almost religious glorification
-                                                of
-                                                "thin", until she becomes possessed by the dark world of anorexia.</p>
-                                        </div>
-                                    </div>
-                                    <div class="fl-bottom-list">
-                                        <div>
-                                            <h3 style="font-family: helvetica;font-weight: 500;font-size: 28px;">Portrait of a Bulimic</h3>
-                                            <span>2000</span>
-                                            <div>
-                                                <img src="images/fl4.png" alt="">
-                                                <img src="images/Shape 7.png" alt="">
-                                            </div>
-                                            <p style="font-family: helvetica;font-weight: 300;font-size: 15px;">The Secret Life of Mary-Margaret: Portrait of a Bulimic tells the true story of
-                                                an
-                                                attractive teenager who feels desperately inadequate. She responds to the
-                                                pressure
-                                                to stay thin.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-box">
-                                    <div class="fl-bottom-list">
-                                        <div>
-                                            <h3>Sharing the Secret</h3>
-                                            <span>2000</span>
-                                            <div>
-                                                <img src="images/fl3.png" alt="">
-                                                <img src="images/Shape 7.png" alt="">
-                                            </div>
-                                            <p>A teenage girl's struggle life suffering from bulimia who secretly binges and
-                                                purges,
-                                                because she feels that she must always seem happy for her parents and friends.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="fl-bottom-list">
-                                        <div>
-                                            <h3>Starving in Suburbia</h3>
-                                            <span>2000</span>
-                                            <div>
-                                                <img src="images/fl2.png" alt="">
-                                                <img src="images/Shape 7.png" alt="">
-                                            </div>
-                                            <p>A 17-year-old dancer joins a "th-
-                                                inspiration" website and devotes herself to the almost religious glorification
-                                                of
-                                                "thin", until she becomes possessed by the dark world of anorexia.</p>
-                                        </div>
-                                    </div>
-                                    <div class="fl-bottom-list">
-                                        <div>
-                                            <h3>Portrait of a Bulimic</h3>
-                                            <span>2000</span>
-                                            <div>
-                                                <img src="images/fl4.png" alt="">
-                                                <img src="images/Shape 7.png" alt="">
-                                            </div>
-                                            <p>The Secret Life of Mary-Margaret: Portrait of a Bulimic tells the true story of
-                                                an
-                                                attractive teenager who feels desperately inadequate. She responds to the
-                                                pressure
-                                                to stay thin.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-box">
-                                    <div class="fl-bottom-list">
-                                        <div>
-                                            <h3>Sharing the Secret</h3>
-                                            <span>2000</span>
-                                            <div>
-                                                <img src="images/fl2.png" alt="">
-                                                <img src="images/Shape 7.png" alt="">
-                                            </div>
-                                            <p>A teenage girl's struggle life suffering from bulimia who secretly binges and
-                                                purges,
-                                                because she feels that she must always seem happy for her parents and friends.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="fl-bottom-list">
-                                        <div>
-                                            <h3>Starving in Suburbia</h3>
-                                            <span>2000</span>
-                                            <div>
-                                                <img src="images/fl3.png" alt="">
-                                                <img src="images/Shape 7.png" alt="">
-                                            </div>
-                                            <p>A 17-year-old dancer joins a "th-
-                                                inspiration" website and devotes herself to the almost religious glorification
-                                                of
-                                                "thin", until she becomes possessed by the dark world of anorexia.</p>
-                                        </div>
-                                    </div>
-                                    <div class="fl-bottom-list">
-                                        <div>
-                                            <h3>Portrait of a Bulimic</h3>
-                                            <span>2000</span>
-                                            <div>
-                                                <img src="images/fl4.png" alt="">
-                                                <img src="images/Shape 7.png" alt="">
-                                            </div>
-                                            <p>The Secret Life of Mary-Margaret: Portrait of a Bulimic tells the true story of
-                                                an
-                                                attractive teenager who feels desperately inadequate. She responds to the
-                                                pressure
-                                                to stay thin.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="btn-r">
-                            <img src="images/_.png" alt="">
-                        </div>
-                    </div>
-                    <div class="fl-bottom-btn w">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div> -->
             </div>
         </div>
-        </div>
+
+<div class="container-fluid" style="margin-top: -300px;">
+    <div class="col-md-12 col-xs-12 col-sm-12 mainStories">
+       
     </div>
-        <div class="mid"></div>
-        <ul class="sel">
-    <li class="btn1 btnNow"><img src="./images/fl2.png" alt=""></li>
-    <li class="btn2"><img src="./images/fl3.png" alt=""></li>
-    <li class="btn3"><img src="./images/fl4.png" alt=""></li>
-<!--     <li class="btn4"><img src="./images/fl5.png" alt=""></li>
-    <li class="btn5"><img src="./images/fl6.png" alt=""></li> -->
-  </ul>
-
-  <div class="picWrapper">
-    <ul class="pics">
-      <li class="pic1"> <div>
-                                            <h3 font-weight: 500;font-size: 28px;">Sharing the Secret</h3>
-                                            <span>2000</span>
-                                            <div>
-                                                <img src="images/fl2.png" alt="">
-                                                <img src="images/Shape 7.png" alt="">
-                                            </div>
-                                            <p font-weight: 300;font-size: 15px;">A teenage girl's struggle life suffering from bulimia who secretly binges and
-                                                purges,
-                                                because she feels that she must always seem happy for her parents and friends.
-                                            </p>
-                                        </div></li>
-      <li class="pic2">
-                                        <div>
-                                            <h3 font-weight: 500;font-size: 28px;">Starving in Suburbia</h3>
-                                            <span>2000</span>
-                                            <div>
-                                                <img src="images/fl3.png" alt="">
-                                                <img src="images/Shape 7.png" alt="">
-                                            </div>
-                                            <p font-weight: 300;font-size: 15px;">A 17-year-old dancer joins a "th-
-                                                inspiration" website and devotes herself to the almost religious glorification
-                                                of
-                                                "thin", until she becomes possessed by the dark world of anorexia.</p>
-                                        </div>
-                                    </li>
-      <li class="pic3">
-                                        <div>
-                                            <h3>Portrait of a Bulimic</h3>
-                                            <span>2000</span>
-                                            <div>
-                                                <img src="images/fl4.png" alt="">
-                                                <img src="images/Shape 7.png" alt="">
-                                            </div>
-                                            <p>The Secret Life of Mary-Margaret: Portrait of a Bulimic tells the true story of
-                                                an
-                                                attractive teenager who feels desperately inadequate. She responds to the
-                                                pressure
-                                                to stay thin.</p>
-                                        </div>
-                                    </li>
-      <li class="pic4"><img src="./images/fl4.png" alt=""></li>
-      <li class="pic5"><img src="./images/fl4.png" alt=""></li>
-    </ul>
-  </div>
-
+</div>
+<!-- 聯繫我們 -->
     <div class="container-fluid pd-bt-40" id="Contact">
-        <div class="section">
+        <div class="section" style="margin-top: -50px;">
             <div class="title col-md-10 col-xs-12 col-ms-12 col-md-offset-1">
-                    <span class="col-md-9  col-xs-12 col-ms-12 name wow slideInUp">When it comes to ED...</span>
+                <span class="col-md-9  col-xs-12 col-ms-12 name wow slideInUp">When it comes to ED...</span>
                     <span class="col-md-2  col-xs-12 col-ms-12 call wow slideInUp">聯繫我們</span>
             </div>
             <div class="title col-md-7  col-md-offset-3">
                 <div class="row">
                     <div class="col-xl-6 col-md-6 col-xs-12 col-ms-12 wow slideInUp">
                         <div class="form-group">
-                            <input name="name" id="name" type="text" class="form-control" placeholder="First Name">
+                            <input name="name" id="inputName" type="text" class="form-control" placeholder="First Name">
                         </div>
                     </div>
                     <div class="col-xl-6 col-md-6  col-xs-12 col-ms-12 wow slideInUp">
                         <div class="form-group">
-                            <input name="text" id="text" type="text" class="form-control" placeholder="Last Name">
+                            <input name="text" id="inputLastName" type="text" class="form-control"
+                                placeholder="Last Name">
                         </div>
                     </div>
 
                     <div class="col-xl-12 col-md-12  col-xs-12 col-ms-12 wow slideInUp">
                         <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
                         </div>
                     </div>
 
                     <div class="col-xl-12 col-md-12  col-xs-12 col-ms-12 wow slideInUp">
                         <div class="form-group">
-                            <textarea class="form-control" rows="7" style="font-family: fangSong;">
+                            <textarea class="form-control" id="textareaContent" rows="7" style="font-family: fangSong;">
 提到ED,你想起了什麼? 
 一.段經歷、一個亟需解决的問题
 抑或是改善现狀的想法?
@@ -583,41 +370,45 @@
                         </div>
                     </div>
 
-
-
                 </div>
                 <div class="row">
                     <div class="col-xl-12 col-md-12 wow slideInUp">
-                        <div> <button class="shareBtn" style="cursor: pointer;">分享我的故事</button></div>
+                        <div class="shareBtnBox">
+                            <button class="shareBtn" style="cursor: pointer;">分享我的故事</button>
+                             <div class="wow slideInUp" id="shareSuccess"
+                                style="display:none;font-family: Helvetica;padding: 10px 20px;">Sent</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
+<!-- Footer -->
     <footer style="background-color: #d9bcb2;border-top:1px solid #a68d85; padding-top: 20px;">
         <div class="container-fluid">
             <div class="col-lg-2 col-md-2 col-sm-2">
-                <img style="width: 50px;" src="./images/bottom.png" class="img-responsive wow slideInUp "
-                    data-wow-delay="0.1s" alt="">
+                <img style="width: 50px; padding-bottom: 30px;" src="./images/bottom.png"
+                    class="img-responsive wow slideInUp " data-wow-delay="0.1s">
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4">
-                <p class=" wow slideInUp helvetica" data-wow-delay="0.2s">intied@gmail.com</p>
-                <p class="f-s wow slideInUp fangSong " data-wow-delay="0.3s">新竹市東區大學路1001號</p>
+                <p class=" wow slideInUp helvetica0" data-wow-delay="0.2s"><a href="mailto:weantied@gmail.com">WeAntiED@gmail.com</a></p>
+                <p class="f-s wow slideInUp fangSong " data-wow-delay="0.3s"><a target="_blank" href="https://goo.gl/maps/jcjJDrWCKVvMtALK9" class="fangSong">新竹市東區大學路1001號</a></p>
             </div>
             <div class="col-lg-5 col-md-5 col-sm-5">
                 <p class="f-s wow slideInUp " data-wow-delay="0.1s">
 
-                    <a href="https://www.nationaleatingdisorders.org" class="fangSong">美國進食障礙幫助協會 NEDA</a>
+                    <a target="_blank" href="https://www.nationaleatingdisorders.org" class="fangSong">美國進食障礙幫助協會
+                        NEDA</a>
                 </p>
                 <p class="f-s wow slideInUp " data-wow-delay="0.2s">
-                    <a href="https://oa.org/" class="fangSong">進食障礙者匿名互助組織 OA</a>
+                    <a target="_blank" href="https://oa.org/" class="fangSong">進食障礙者匿名互助組織 OA</a>
                 </p>
             </div>
             <div class="col-lg-1 col-md-1 col-sm-1">
                 <p style="margin-top: 62px;" class="text-c wow bounceInRight" data-wow-delay="0.1">
-                    <a
-                        href="mailto:https://www.google.com.tw/maps/place/300%E6%96%B0%E7%AB%B9%E5%B8%82%E6%9D%B1%E5%8D%80%E5%A4%A7%E5%AD%B8%E8%B7%AF1001%E8%99%9F/@24.7861802,120.9984813,16.12z/data=!4m5!3m4!1s0x34683611dcf63a29:0x7cd7b92e8a3c5019!8m2!3d24.7884305!4d120.9986143">© AntiED</a>
+                    <a target="_blank"
+                        href="mailto:https://www.google.com.tw/maps/place/300%E6%96%B0%E7%AB%B9%E5%B8%82%E6%9D%B1%E5%8D%80%E5%A4%A7%E5%AD%B8%E8%B7%AF1001%E8%99%9F/@24.7861802,120.9984813,16.12z/data=!4m5!3m4!1s0x34683611dcf63a29:0x7cd7b92e8a3c5019!8m2!3d24.7884305!4d120.9986143">©
+                        AntiED</a>
                 </p>
             </div>
         </div>
@@ -627,64 +418,29 @@
     <script src="./js/jquery.min.js "> </script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/wow.min.js"> </script>
-
+    <script src="./js/locomotive-scroll.min.js"></script>
+    <script type="text/javascript" src="./js/skrollr.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<!-- 換圖震動 -->
     <script>
-        var menu = document.querySelector(".menus");
-        var uls = document.querySelector(".navs");
-        var logo = document.querySelector(".logo");
-        var flag = true;
-
-        menu.onclick = function () {
-
-            if (flag) {
-                uls.style.display = "block";
-                flag = false;
-            } else {
-                menu.onclick = function () {
-                    uls.style.display = "none"
-                    flag = true;
-                    console.log(cxg);
-                }
-            }
-        }
-        .onclick = function () {
-            scrollTo(0, 0);
-        }
-        var timer = null;
-        logo.onclick = function () {
-            cancelAnimationFrame(timer);
-            timer = requestAnimationFrame(function fn() {
-                var oTop = document.body.scrollTop || document.documentElement.scrollTop;
-                if (oTop > 0) {
-                    document.body.scrollTop = document.documentElement.scrollTop = oTop - 50;
-                    timer = requestAnimationFrame(fn);
-                } else {
-                    cancelAnimationFrame(timer);
-                }
-            });
-        }
-        var btnl = document.querySelector(".btn-l");
-        var btnr = document.querySelector(".btn-r");
-        var caCON = document.querySelector(".carousel-contrian"); // 大盒子
-        var num = 0;
-        btnl.onclick = function() {
-            num++;
-            caCON.style.transform = "translateX(-33.3%)";
-
-        }
-        btnr.onclick = function() {
-            caCON.style.transform = "translateX(0)";
-        }
-        var timer = setInterval(function() {
-            //手动调用点击事件
-            btnl.onclick()
-        }, 2000);
-        var timel = setInterval(function() {
-            //手动调用点击事件
-            btnr.onclick()
-        }, 4000);
+    $(function() {
+       $('#chp001').hover( function(){
+          $('#chp001>img').attr({src: './images/mainpic-1.png'}).effect({effect: 'shake', direction: 'up', distance: 2, times: 1});
+          },
+          function(){
+       $('#chp001>img').attr({src:'./images/mainpic.png'});
+       });
+    });
+     $(function() {
+       $('#chp002').hover( function(){
+          $('#chp002>img').attr({src: './images/contact_billie-1.png'}).effect({effect: 'shake', direction: 'up', distance: 2, times: 1});
+          },
+          function(){
+       $('#chp002>img').attr({src:'./images/contact_billie.png'});
+       });
+    });
     </script>
-    <script type="text/javascript">
+    <script>
         var th=$(".nav").offset().top;
         $(window).scroll(function(){
             var h=$(this).scrollTop();//获得滚动条距top的高度
@@ -705,106 +461,34 @@
     </script>
 
     <script>
-        $(function () {
-
-            var p = 0, t = 0; //上下滚动时隐藏导航栏
-            $(window).scroll(function (e) {
-                //下滑
-                p = $(this).scrollTop();
-                if (t < p && p !== 0) {
-                    $('.m-nav').slideUp('slow');
-                } else {
+       $(function () {
+    // jquery在DOM載入後執行 function(){...}
+        //上下滚动时隐藏导航栏
+        var p = 0, t = 0; 
+        $(window).scroll(function (e) {
+            //下滑
+            p = $(this).scrollTop();
+            if (t < p && p !== 0) {
+                $('.m-nav').slideUp('slow');
+            } else {
                 //上滑
-                    $('.m-nav').slideDown('slow')
-                }
-                t = p;//更新上一次的scroll值
-            })
+                $('.m-nav').slideDown('slow')
+            }
+            t = p;//更新上一次的scroll值
+        })
+        //刷新回到頂部
+        $('html,body').animate({
+            scrollTop: 0
+        }, 0);
 
-            var storiesText = ''
-            var dropdownItemText = ''
-            $('html,body').animate({
-                scrollTop: 0
-            }, 0);
-// 下拉選單類別篩選
-            // 給各個類別添加點擊事件
-            $('.dropdownItem').click(function (e) {
-                // 獲取當前類別的內容
-                let index = e.target.dataset.index
-                let name = e.target.innerHTML
-                // 如果與上次點擊的相同則顯示all topics
-                if (dropdownItemText == name) {
-                    $('#dropdownSelectItem').html('All topic')
-                    dropdownItemText = 'All topic'
-                    $('[data-stories]').each((index, element) => {
-                        element.style.display = 'block'
-                    });
-                    return
-                }
-                // 賦值給上一次點擊
-                dropdownItemText = name
-                $('#dropdownSelectItem').html(name)
-                // 如果選擇all topics
-                if (index == 'all') {
-                    // 顯示全部
-                    $('[data-stories]').each((index, element) => {
-                        element.style.display = 'block'
-                    });
-                } else {
-                    // 去匹配要顯示的story
-                    $('[data-stories]').each((index, element) => {
-                        let stories = element.dataset.stories
-
-                        if (stories.includes(index)) {
-                            element.style.display = 'block'
-                        } else {
-                            element.style.display = 'none'
-                        }
-                    });
-
-                }
-            })
-
-            $('.getMore').click(function () {
-                $('#moreSameStories').css('display', 'flex')
-                $('.getMore').hide()
-            })
-
-// 關鍵字篩選
-            // 給各個關鍵字添加點擊事件
-            $('.corner-mark,.corner-mark2').click(function (e) {
-                $('.corner-mark').css('background-color', '#a96553')
-                $('.corner-mark2').css('background-color', '#8e6e63')
-                // 獲取當前點擊的關鍵字的內容
-                let text = e.target.innerText.replace(/ /g, '')
-                // 如果與上次點擊的相同則顯示all topics
-                if (text == storiesText) {
-                    $('[data-stories]').each((index, element) => {
-                        element.style.display = 'block'
-                    });
-                    storiesText =''
-                    return
-                }
-                e.target.style.backgroundColor = e.target.className === 'corner-mark' ? '#8e6e63':'#a96553'
-                // 賦值給上一次點擊
-                storiesText = text
-                // 去匹配要顯示的story
-                $('[data-stories]').each((index, element) => {
-                    let stories = element.dataset.stories
-                    if (stories.includes(text)) {
-                        element.style.display = 'block'
-                    } else {
-                        element.style.display = 'none'
-                    }
-                });
-            })
-
-            $('#collapse a,.navbar-brand').click(function () {
+        //漢堡選單
+        $('#collapse a,.navbar-brand').click(function () {
                 if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
                     var $target = $(this.hash);
                     $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
                     console.log($target)
                     if ($target.length) {
-                        var targetOffset = $target.offset().top - 90;
+                        var targetOffset = $target.offset().top - 90; //  $target.offset().top: target於網頁相對位置(offset)的y座標(top) 
                         $('html,body').animate({
                             scrollTop: targetOffset
                         },
@@ -813,6 +497,12 @@
                     }
                 }
             })
+
+        // 點擊分享按鈕，清除文本框內容，顯示發送成功
+        $('.shareBtn').click(function () {
+             $('#inputEmail,#inputName,#inputLastName,#textareaContent').val('')
+             swal("Sent", "感謝分享", "success");
+        })
 
             if ($(".wow").length) {
                 var wow = new WOW(
@@ -828,9 +518,49 @@
                 wow.init();
             }
         })
+       //鼠标移入、移出链接时，都去掉下划线
+       $("a").hover( function(event){
+            $(this).css("textDecoration", "none");  
+        } );
+       //hover事件
+       $(document).ready(function(){ // 防止文档在完全加载（就绪）之前运行 jQuery 代码
+            $("#CampaignBox1 a").hover(function(){
+                 $("#CampaignBox1").addClass("store-item-line-white");
+                 $("#campaign1 img").addClass("pic-darken");
+                 $("#white-arrow1, #red-arrow1").toggleClass("hide");//当鼠标移进的时候触发事件A 
+              },function(){ 
+                 $("#CampaignBox1").removeClass("store-item-line-white");
+                 $("#CampaignBox1").addClass("store-item-line");
+                 $("#campaign1 img").removeClass("pic-darken");
+                 $("#white-arrow1, #red-arrow1").toggleClass("hide");//当鼠标移出的时候触发事件B 
+            });
+
+            $("#CampaignBox2 a").hover(function(){
+                 $("#CampaignBox2").addClass("store-item-line-white");
+                 $("#campaign2 img").addClass("pic-darken");
+                 $("#white-arrow2, #red-arrow2").toggleClass("hide");//当鼠标移进的时候触发事件A 
+              },function(){ 
+                 $("#CampaignBox2").removeClass("store-item-line-white");
+                 $("#CampaignBox2").addClass("store-item-line");
+                 $("#campaign2 img").removeClass("pic-darken");
+                 $("#white-arrow2, #red-arrow2").toggleClass("hide");//当鼠标移出的时候触发事件B 
+            });
+
+            $("#CampaignBox3 a").hover(function(){
+                 $("#CampaignBox3").addClass("store-item-line-white");
+                 $("#campaign3 img").addClass("pic-darken");
+                 $("#white-arrow3, #red-arrow3").toggleClass("hide");//当鼠标移进的时候触发事件A 
+              },function(){ 
+                 $("#CampaignBox3").removeClass("store-item-line-white");
+                 $("#CampaignBox3").addClass("store-item-line");
+                 $("#campaign3 img").removeClass("pic-darken");
+                 $("#white-arrow3, #red-arrow3").toggleClass("hide");//当鼠标移出的时候触发事件B 
+            });
+        });
     </script>
-
-
 </body>
-
+  <!-- hover換圖震動 -->
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/smoothness/jquery-ui.css">
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
 </html>

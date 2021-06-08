@@ -324,7 +324,7 @@ a {
 }
 
 #Contact{
-    margin-top: -100px;
+    margin-top: 0px;
     background:#d9bcb2 url(../img/wave2.png) no-repeat center bottom 100%;
 }
 
@@ -384,6 +384,7 @@ a {
 .return{
     max-width: 1140px;
     margin:0px auto;
+    padding: 20px;
 }
 .return a{
     text-decoration: none;
@@ -425,36 +426,31 @@ a {
 }
 
 #storycontent{
-    max-width: 75%;
-    margin:0px auto;
+    margin:0px;
     padding-top: 100px;
 }
 .karen{
     display: flex;
     align-items: flex-end;
-    margin:30px;
+    margin:40px;
 }
 .lily{
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-end;
-    margin:30px;
-}
-.louise{
-    display: flex;
-    align-items: flex-end;
-    margin:30px;
+    margin:40px;
 }
 .name{
     font-family: serif;
     font-size:36px;
     margin:30px auto;
+    text-align: center;
 }
 .nameL{
     font-family: serif;
     font-size:36px;
     margin:30px auto;
-    text-align: right;
+    text-align: center;
 }
 .word{
     font-family: fangSong;
@@ -464,8 +460,9 @@ a {
     display:flex;
     justify-content: flex-end;
 }
-
-
+.photo{
+    margin: 0 auto;
+}
 .flex{
     display: flex;
 }
@@ -478,10 +475,7 @@ a {
         float: initial;
         
     }
-    .storiesTopLeft {
-        padding-right:0;
-        border-right: none;
-    }
+    
     .mainStoriesBook #anna img{
         margin-top: 0px;
     }
@@ -548,10 +542,4 @@ a {
 footer a:hover{
     text-decoration: none;
     color: #fff5eb !important;
-}
-
-a:visited {
-//設定已經瀏覽過的連結
-color:#ffffff;
-background-color:red;
 }

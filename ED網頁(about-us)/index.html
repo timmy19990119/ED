@@ -124,7 +124,7 @@
             <div class="section">
                 <div class="title col-md-10 col-xs-12 col-ms-12 col-md-offset-1">
                         <span class="col-md-9  col-xs-12 col-ms-12 name wow slideInUp">When it comes to ED...</span>
-                        <span class="col-md-2  col-xs-12 col-ms-12 call wow slideInUp">聯繫我們</span>
+                    <span class="col-md-2  col-xs-12 col-ms-12 call wow slideInUp">聯繫我們</span>
                 </div>
                 <div class="title col-md-7  col-md-offset-3">
                     <div class="row">
@@ -246,7 +246,22 @@
                     scrollTop: 0
                 }, 0);
     
-    
+                        //漢堡選單
+        $('#collapse a,.navbar-brand').click(function () {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var $target = $(this.hash);
+                $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
+                console.log($target)
+                if ($target.length) {
+                    var targetOffset = $target.offset().top - 90; //  $target.offset().top: target於網頁相對位置(offset)的y座標(top) 
+                    $('html,body').animate({
+                        scrollTop: targetOffset
+                    },
+                        1000);
+                    return false;
+                }
+            }
+        })
     
                 if ($(".wow").length) {
                     var wow = new WOW(

@@ -498,3 +498,42 @@ a:visited {
 color:#ffffff;
 background-color:red;
 }
+
+.one{
+    position: absolute;
+    left: 630px;
+    bottom: 45px;
+    font-size: 30px;
+/*    transform: translateX(100px);
+    transition: all 5s 5s;*/
+    -webkit-animation: show .5s .2s infinite ease-out alternate;
+}
+.two{
+    position: absolute;
+    left: 650px;
+    bottom: 45px;
+    font-size: 30px;
+/*    transform: translateX(100px);
+    transition: all 5s 5s;*/
+    -webkit-animation: show .5s .4s infinite ease-out alternate;
+}
+.three{
+    position: absolute;
+    left:670px;
+    bottom: 45px;
+    font-size: 30px;
+/*    transform: translateX(100px);
+    transition: all 5s 5s;*/
+    animation: show .5s .6s infinite ease-out alternate;
+}
+
+
+@keyframes show{
+    0%{
+        transform: translate(0,0);
+    }
+    100%{
+        transform: translate(5px,-5px);
+    }
+}
+
