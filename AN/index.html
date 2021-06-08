@@ -165,11 +165,13 @@
 
 
                 </div>
-                <div class="row">
-                    <div class="col-xl-12 col-md-12 wow slideInUp">
-                        <div> <button class="shareBtn" style="cursor: pointer;">分享我的故事</button></div>
+                <div class="col-xl-12 col-md-12 wow slideInUp">
+                        <div class="shareBtnBox">
+                            <button class="shareBtn" style="cursor: pointer;">分享我的故事</button>
+                             <div class="wow slideInUp" id="shareSuccess"
+                                style="display:none;font-family: Helvetica;padding: 10px 20px;">Sent</div>
+                        </div>
                     </div>
-                </div>
             </div>
         </div>
     </div>
@@ -207,7 +209,7 @@
     <script src="./js/jquery.min.js "> </script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/wow.min.js"> </script>
-
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script>
         $(function () {
 
@@ -229,6 +231,16 @@
             $('html,body').animate({
                 scrollTop: 0
             }, 0);
+
+                // 點擊分享按鈕，清除文本框內容，顯示發送成功
+        $('.shareBtn').click(function () {
+             $('#inputEmail,#inputName,#inputLastName,#textareaContent').val('')
+
+             //$('#shareSuccess').show()
+
+             //alert('Successfully Sent | 已傳送，感謝分享')
+             swal("Sent", "感謝分享", "success");
+        })
 
                     //漢堡選單
         $('#collapse a,.navbar-brand').click(function () {
